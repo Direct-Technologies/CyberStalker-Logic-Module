@@ -1,1 +1,5 @@
 # CyberStalker-Logic-Module
+
+Created to improve user’s predictive cybersecurity analytics, CyberStalker Logic Module allows the implementation of both standard and custom rules to ensure the best security threat analysis. The module provides you with the opportunity to administrate thresholds, customize them under specific activities and needs so the user cannot miss any minor suspicious event within the infrastructure. Moreover, the slightest potential problems can be identified even within a hybrid IT environment.
+What is more, the module combines several sandboxing approaches that help the user to detect new forms of malware, prevent zero-day attacks, detect targeted malware, and deliver the highest detection rates in the cybersecurity industry.
+Its key feature - the advanced scan engine - employs advanced decomposition techniques that extract and reveal all compressed and obfuscated data in a malicious file in real time, thus providing next-level security for the infrastructure in use.
