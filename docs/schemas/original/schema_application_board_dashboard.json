@@ -1,0 +1,102 @@
+{
+    "schema": {
+        "id": "0c7c77c1-0959-4899-b462-2c99ce8b934f",
+        "name": "PixelBoard Dashboard",
+        "type": "dataset",
+        "m_icon": null,
+        "m_tags": [
+            "application",
+            "board",
+            "dashboard"
+        ],
+        "enabled": true,
+        "m_email": "support@pixel-networks.com",
+        "m_author": "Pixel",
+        "m_picture": null,
+        "m_version": "1.0.18",
+        "m_longname": null,
+        "default_ttl": null,
+        "description": "PixelBoard Dashboard",
+        "m_external_id": "0c7c77c1-0959-4899-b462-2c99ce8b934f",
+        "m_manufacturer": "Pixel",
+        "application_owner": "b32dcad5-f93a-483f-b5a6-11399d5a25e1"
+    },
+    "properties": [
+        {
+            "mask": "",
+            "type": "string",
+            "index": 0,
+            "regex": "",
+            "units": "",
+            "hidden": true,
+            "property": "Background image",
+            "value_set": null,
+            "group_name": "General",
+            "description": "Background image",
+            "value_range": null,
+            "default_value": null,
+            "group_description": null
+        },
+        {
+            "mask": "",
+            "type": "bool",
+            "index": 0,
+            "regex": "",
+            "units": "",
+            "hidden": false,
+            "property": "Compact mode",
+            "value_set": {
+                "component": "switch"
+            },
+            "group_name": "General",
+            "description": "Compact mode",
+            "value_range": null,
+            "default_value": false,
+            "group_description": null
+        },
+        {
+            "mask": "",
+            "type": "string",
+            "index": 0,
+            "regex": "",
+            "units": "",
+            "hidden": false,
+            "property": "Title",
+            "value_set": {
+                "component": "text"
+            },
+            "group_name": "General",
+            "description": "Title",
+            "value_range": null,
+            "default_value": "",
+            "group_description": null
+        },
+        {
+            "mask": "",
+            "type": "string",
+            "index": 0,
+            "regex": "",
+            "units": "",
+            "hidden": false,
+            "property": "Title style",
+            "value_set": {
+                "list": [
+                    {
+                        "key": "dark",
+                        "title": "Dark"
+                    },
+                    {
+                        "key": "light",
+                        "title": "Light"
+                    }
+                ],
+                "component": "select"
+            },
+            "group_name": "General",
+            "description": "Title style",
+            "value_range": null,
+            "default_value": "dark",
+            "group_description": null
+        }
+    ]
+}

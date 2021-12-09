@@ -1,0 +1,155 @@
+{
+    "schema": {
+        "id": "02ac3b11-0260-4c2d-9af1-59e3800b4f10",
+        "name": "PixelBoard Title widget",
+        "type": "dataset",
+        "m_icon": null,
+        "m_tags": [
+            "application",
+            "board",
+            "widget",
+            "title"
+        ],
+        "enabled": true,
+        "m_email": "support@pixel-networks.com",
+        "m_author": "Pixel",
+        "m_picture": null,
+        "m_version": "0.0.18",
+        "m_longname": null,
+        "default_ttl": null,
+        "description": "Title widget is designed to display short text entered by the user. The widget can also contain a link to the dashboard or a separate container that can be opened in a modal window on top of the main dashboard.",
+        "m_external_id": "02ac3b11-0260-4c2d-9af1-59e3800b4f10",
+        "m_manufacturer": "Pixel",
+        "application_owner": "b32dcad5-f93a-483f-b5a6-11399d5a25e1"
+    },
+    "properties": [
+        {
+            "mask": "",
+            "type": "bool",
+            "index": 0,
+            "regex": "",
+            "units": "",
+            "hidden": false,
+            "property": "Full line",
+            "value_set": {
+                "component": "switch"
+            },
+            "group_name": "Settings",
+            "description": "Full line",
+            "value_range": null,
+            "default_value": false,
+            "group_description": null
+        },
+        {
+            "mask": "",
+            "type": "bool",
+            "index": 0,
+            "regex": "",
+            "units": "",
+            "hidden": false,
+            "property": "New line",
+            "value_set": {
+                "component": "switch"
+            },
+            "group_name": "Settings",
+            "description": "End of Line",
+            "value_range": null,
+            "default_value": null,
+            "group_description": null
+        },
+        {
+            "mask": "",
+            "type": "string",
+            "index": 0,
+            "regex": "",
+            "units": "",
+            "hidden": false,
+            "property": "Size",
+            "value_set": {
+                "list": [
+                    {
+                        "key": "small",
+                        "title": "Small"
+                    },
+                    {
+                        "key": "medium",
+                        "title": "Medium"
+                    }
+                ],
+                "component": "select"
+            },
+            "group_name": "Settings",
+            "description": "Size",
+            "value_range": null,
+            "default_value": "small",
+            "group_description": null
+        },
+        {
+            "mask": "",
+            "type": "string",
+            "index": 0,
+            "regex": "",
+            "units": "",
+            "hidden": false,
+            "property": "Style",
+            "value_set": {
+                "list": [
+                    {
+                        "key": "lightondark",
+                        "title": "Light on dark"
+                    },
+                    {
+                        "key": "lightontransparent",
+                        "title": "Light on transparent"
+                    },
+                    {
+                        "key": "darkonlight",
+                        "title": "Dark on light"
+                    },
+                    {
+                        "key": "darkontransparent",
+                        "title": "Dark on transparent"
+                    }
+                ],
+                "component": "select"
+            },
+            "group_name": "Settings",
+            "description": "Style",
+            "value_range": null,
+            "default_value": "lightondark",
+            "group_description": null
+        },
+        {
+            "mask": "",
+            "type": "number",
+            "index": 0,
+            "regex": "",
+            "units": "",
+            "hidden": false,
+            "property": "Position",
+            "value_set": "",
+            "group_name": "Status",
+            "description": "Position",
+            "value_range": "",
+            "default_value": 0,
+            "group_description": null
+        },
+        {
+            "mask": "",
+            "type": "string",
+            "index": 0,
+            "regex": "",
+            "units": "",
+            "hidden": false,
+            "property": "Text",
+            "value_set": {
+                "component": "text"
+            },
+            "group_name": "Value",
+            "description": "Text",
+            "value_range": null,
+            "default_value": "Title",
+            "group_description": null
+        }
+    ]
+}

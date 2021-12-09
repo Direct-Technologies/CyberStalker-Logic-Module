@@ -1,0 +1,121 @@
+{
+  "schema_file": "./docs/schemas/original/object-state-generic.json",
+  "schema": {
+        "id": "be75e9ce-2bf5-46f1-acf8-b959a23ce97d",
+        "name": "PixelMonitor Object State, Template",
+        "type": "dataset",
+        "m_icon": null,
+        "m_tags": [
+            "application",
+            "monitor",
+            "object state",
+            "generic"
+        ],
+        "enabled": true,
+        "m_email": null,
+        "m_author": "Pixel",
+        "m_picture": null,
+        "m_version": "0.0.11",
+        "m_longname": null,
+        "default_ttl": null,
+        "description": null,
+        "m_external_id": null,
+        "m_manufacturer": "Pixel",
+        "application_owner": "b32dcad5-f93a-483f-b5a6-11399d5a25e1"
+    },
+    "properties": [
+        {
+            "mask": "",
+            "type": "string",
+            "index": 0,
+            "regex": "",
+            "units": "",
+            "hidden": false,
+            "property": "Name",
+            "value_set": null,
+            "group_name": "Info",
+            "description": null,
+            "value_range": null,
+            "default_value": "",
+            "group_description": null
+        },
+        {
+            "mask": "",
+            "type": "string",
+            "index": 0,
+            "regex": "",
+            "units": "",
+            "hidden": false,
+            "property": "Color",
+            "value_set": "",
+            "group_name": "State",
+            "description": "",
+            "value_range": "",
+            "default_value": "",
+            "group_description": null
+        },
+        {
+            "mask": "",
+            "type": "json object",
+            "index": 0,
+            "regex": "",
+            "units": "",
+            "hidden": false,
+            "property": "Condition",
+            "value_set": "",
+            "group_name": "State",
+            "description": "",
+            "value_range": "",
+            "default_value": {
+                "value": 0,
+                "operator": "="
+            },
+            "group_description": null
+        },
+        {
+            "mask": "",
+            "type": "string",
+            "index": 0,
+            "regex": "",
+            "units": "",
+            "hidden": false,
+            "property": "Icon",
+            "value_set": "",
+            "group_name": "State",
+            "description": "",
+            "value_range": "",
+            "default_value": "",
+            "group_description": null
+        },
+        {
+            "mask": "",
+            "type": "bool",
+            "index": 0,
+            "regex": "",
+            "units": "",
+            "hidden": false,
+            "property": "Is Default",
+            "value_set": null,
+            "group_name": "State",
+            "description": null,
+            "value_range": null,
+            "default_value": false,
+            "group_description": null
+        },
+        {
+            "mask": "",
+            "type": "string",
+            "index": 0,
+            "regex": "",
+            "units": "",
+            "hidden": false,
+            "property": "Value",
+            "value_set": "",
+            "group_name": "State",
+            "description": "",
+            "value_range": "",
+            "default_value": "",
+            "group_description": null
+        }
+    ]
+}

@@ -1,0 +1,41 @@
+{
+    "schema": {
+      "id": "f5422c61-e54d-46f0-b729-f0faff1f28be",
+      "name": "PixelMonitor Group",
+      "type": "dataset",
+      "m_icon": null,
+      "m_tags": [
+        "application",
+        "monitor",
+        "group"
+      ],
+      "enabled": true,
+      "m_email": "support@pixel-networks.com",
+      "m_author": "Pixel",
+      "m_picture": null,
+      "m_version": "0.0.4",
+      "m_longname": null,
+      "default_ttl": null,
+      "description": null,
+      "m_external_id": "f5422c61-e54d-46f0-b729-f0faff1f28be",
+      "m_manufacturer": "Pixel",
+      "editorgroup": "5d963ea1-cdf2-4e66-8f98-bc07d5f3ea07"
+    },
+    "properties": [
+      {
+        "mask": "",
+        "type": "number",
+        "index": 0,
+        "regex": "",
+        "units": "",
+        "hidden": false,
+        "property": "Position in menu",
+        "value_set": "",
+        "group_name": "Settings",
+        "description": "",
+        "value_range": "",
+        "default_value": 1,
+        "group_description": null
+      }
+    ]
+  }

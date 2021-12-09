@@ -1,0 +1,137 @@
+{
+    "schema": {
+        "id": "6371e04b-d0b4-492f-8868-514d0238729f",
+        "name": "Timeseries Statistics",
+        "type": "dataset",
+        "m_icon": null,
+        "m_tags": [
+            "application",
+            "dispatcher",
+            "statistics",
+            "timeseries"
+        ],
+        "enabled": true,
+        "m_email": "support@pixel-networks.com",
+        "m_author": "Pixel",
+        "m_picture": null,
+        "m_version": "0.0.5",
+        "m_longname": null,
+        "default_ttl": null,
+        "description": "Statistics",
+        "m_external_id": null,
+        "m_manufacturer": "Pixel",
+        "application_owner": "b32dcad5-f93a-483f-b5a6-11399d5a25e1"
+    },
+    "properties": [
+        {
+            "mask": "",
+            "type": "string",
+            "index": 0,
+            "regex": "",
+            "units": "",
+            "hidden": false,
+            "property": "Function",
+            "value_set": {
+                "list": [
+                    {
+                        "key": "Timeseries",
+                        "title": "Timeseries"
+                    },
+                    {
+                        "key": "Average",
+                        "title": "Average"
+                    },
+                    {
+                        "key": "Min",
+                        "title": "Min"
+                    },
+                    {
+                        "key": "Max",
+                        "title": "Max"
+                    }
+                ],
+                "component": "select"
+            },
+            "group_name": "Settings",
+            "description": "Function",
+            "value_range": null,
+            "default_value": "Timeseries",
+            "group_description": null
+        },
+        {
+            "mask": "",
+            "type": "string",
+            "index": 0,
+            "regex": "",
+            "units": "",
+            "hidden": false,
+            "property": "Object",
+            "value_set": null,
+            "group_name": "Settings",
+            "description": "Object",
+            "value_range": null,
+            "default_value": null,
+            "group_description": null
+        },
+        {
+            "mask": "",
+            "type": "number",
+            "index": 0,
+            "regex": "",
+            "units": "",
+            "hidden": false,
+            "property": "Period",
+            "value_set": null,
+            "group_name": "Settings",
+            "description": "Period Seconds",
+            "value_range": null,
+            "default_value": null,
+            "group_description": null
+        },
+        {
+            "mask": "",
+            "type": "string",
+            "index": 0,
+            "regex": "",
+            "units": "",
+            "hidden": false,
+            "property": "Property",
+            "value_set": null,
+            "group_name": "Settings",
+            "description": "Property",
+            "value_range": null,
+            "default_value": null,
+            "group_description": null
+        },
+        {
+            "mask": "",
+            "type": "json object",
+            "index": 0,
+            "regex": "",
+            "units": "",
+            "hidden": false,
+            "property": "Value",
+            "value_set": null,
+            "group_name": "Value",
+            "description": "Value",
+            "value_range": null,
+            "default_value": {},
+            "group_description": null
+        },
+        {
+            "mask": "",
+            "type": "json array",
+            "index": 0,
+            "regex": "",
+            "units": "",
+            "hidden": false,
+            "property": "Timeseries",
+            "value_set": null,
+            "group_name": "Value",
+            "description": "Timeseries",
+            "value_range": null,
+            "default_value": [{}],
+            "group_description": null
+        }
+    ]
+}

@@ -1,0 +1,5 @@
+# To be properly exported workers needs to be explicitly called in the submodule init file
+from .user_management_worker import user_management_worker
+from .user_management_email_worker import user_management_email_worker
+from .user_management_worker import user_management_subscription
+from .user_management_email_worker import user_management_email_subscription

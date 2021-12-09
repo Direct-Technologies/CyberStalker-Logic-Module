@@ -1,0 +1,273 @@
+{
+    "schema": {
+        "id": "fde9bdce-d83e-4533-ac21-5114d250ed22",
+        "name": "PixelBoard Datetime widget",
+        "type": "dataset",
+        "m_icon": null,
+        "m_tags": [
+            "application",
+            "board",
+            "widget",
+            "datetime"
+        ],
+        "enabled": true,
+        "m_email": "support@pixel-networks.com",
+        "m_author": "Pixel",
+        "m_picture": null,
+        "m_version": "0.0.19",
+        "m_longname": null,
+        "default_ttl": null,
+        "description": "A clock widget designed to display the current date and time for the selected time zone.",
+        "m_external_id": "fde9bdce-d83e-4533-ac21-5114d250ed22",
+        "m_manufacturer": "Pixel",
+        "application_owner": "b32dcad5-f93a-483f-b5a6-11399d5a25e1"
+    },
+    "properties": [
+        {
+            "mask": "",
+            "type": "string",
+            "index": 0,
+            "regex": "",
+            "units": "",
+            "hidden": false,
+            "property": "Format",
+            "value_set": {
+                "list": [
+                    {
+                        "key": "date",
+                        "title": "Date"
+                    },
+                    {
+                        "key": "time",
+                        "title": "Time"
+                    },
+                    {
+                        "key": "date_time",
+                        "title": "Date and Time"
+                    },
+                    {
+                        "key": "date_time_day",
+                        "title": "Date, Time, Day of week"
+                    },
+                    {
+                        "key": "date_day",
+                        "title": "Date, Day of week"
+                    }
+                ],
+                "component": "select"
+            },
+            "group_name": "Settings",
+            "description": "Format",
+            "value_range": null,
+            "default_value": "time",
+            "group_description": null
+        },
+        {
+            "mask": "",
+            "type": "bool",
+            "index": 0,
+            "regex": "",
+            "units": "",
+            "hidden": false,
+            "property": "Full line",
+            "value_set": {
+                "component": "switch"
+            },
+            "group_name": "Settings",
+            "description": "Full line",
+            "value_range": null,
+            "default_value": false,
+            "group_description": null
+        },
+        {
+            "mask": "",
+            "type": "bool",
+            "index": 0,
+            "regex": "",
+            "units": "",
+            "hidden": false,
+            "property": "New line",
+            "value_set": {
+                "component": "switch"
+            },
+            "group_name": "Settings",
+            "description": "End of Line",
+            "value_range": null,
+            "default_value": null,
+            "group_description": null
+        },
+        {
+            "mask": "",
+            "type": "bool",
+            "index": 0,
+            "regex": "",
+            "units": "",
+            "hidden": false,
+            "property": "Show day of week",
+            "value_set": {
+                "component": "switch"
+            },
+            "group_name": "Settings",
+            "description": "Show day of week",
+            "value_range": null,
+            "default_value": false,
+            "group_description": null
+        },
+        {
+            "mask": "",
+            "type": "bool",
+            "index": 0,
+            "regex": "",
+            "units": "",
+            "hidden": false,
+            "property": "Simulation",
+            "value_set": {
+                "component": "switch"
+            },
+            "group_name": "Settings",
+            "description": "Simulation",
+            "value_range": null,
+            "default_value": false,
+            "group_description": null
+        },
+        {
+            "mask": "",
+            "type": "string",
+            "index": 0,
+            "regex": "",
+            "units": "",
+            "hidden": false,
+            "property": "Size",
+            "value_set": {
+                "list": [
+                    {
+                        "key": "small",
+                        "title": "Small"
+                    },
+                    {
+                        "key": "medium",
+                        "title": "Medium"
+                    }
+                ],
+                "component": "select"
+            },
+            "group_name": "Settings",
+            "description": "Size",
+            "value_range": null,
+            "default_value": "small",
+            "group_description": null
+        },
+        {
+            "mask": "",
+            "type": "string",
+            "index": 0,
+            "regex": "",
+            "units": "",
+            "hidden": false,
+            "property": "Style",
+            "value_set": {
+                "list": [
+                    {
+                        "key": "lightondark",
+                        "title": "Light on dark"
+                    },
+                    {
+                        "key": "lightontransparent",
+                        "title": "Light on transparent"
+                    },
+                    {
+                        "key": "darkonlight",
+                        "title": "Dark on light"
+                    },
+                    {
+                        "key": "darkontransparent",
+                        "title": "Dark on transparent"
+                    }
+                ],
+                "component": "select"
+            },
+            "group_name": "Settings",
+            "description": "Style",
+            "value_range": null,
+            "default_value": "lightondark",
+            "group_description": null
+        },
+        {
+            "mask": "",
+            "type": "string",
+            "index": 0,
+            "regex": "",
+            "units": "",
+            "hidden": false,
+            "property": "Time zone",
+            "value_set": {
+                "component": "text"
+            },
+            "group_name": "Source",
+            "description": "Time zone",
+            "value_range": null,
+            "default_value": "",
+            "group_description": null
+        },
+        {
+            "mask": "",
+            "type": "number",
+            "index": 0,
+            "regex": "",
+            "units": "",
+            "hidden": false,
+            "property": "Position",
+            "value_set": "",
+            "group_name": "Status",
+            "description": "Position",
+            "value_range": "",
+            "default_value": 0,
+            "group_description": null
+        },
+        {
+            "mask": "",
+            "type": "string",
+            "index": 0,
+            "regex": "",
+            "units": "",
+            "hidden": false,
+            "property": "Date",
+            "value_set": "",
+            "group_name": "Value",
+            "description": "",
+            "value_range": "",
+            "default_value": "",
+            "group_description": null
+        },
+        {
+            "mask": "",
+            "type": "string",
+            "index": 0,
+            "regex": "",
+            "units": "",
+            "hidden": false,
+            "property": "Day",
+            "value_set": "",
+            "group_name": "Value",
+            "description": "",
+            "value_range": "",
+            "default_value": "",
+            "group_description": null
+        },
+        {
+            "mask": "",
+            "type": "string",
+            "index": 0,
+            "regex": "",
+            "units": "",
+            "hidden": false,
+            "property": "Time",
+            "value_set": "",
+            "group_name": "Value",
+            "description": "",
+            "value_range": "",
+            "default_value": "",
+            "group_description": null
+        }
+    ]
+}

@@ -1,0 +1,161 @@
+{
+    "schema": {
+        "id": "60a13d6f-10ce-4790-88b2-a17724bad843",
+        "name": "Objects Statistics",
+        "type": "dataset",
+        "m_icon": null,
+        "m_tags": [
+            "application",
+            "dispatcher",
+            "statistics",
+            "objects"
+        ],
+        "enabled": true,
+        "m_email": "support@pixel-networks.com",
+        "m_author": "Pixel",
+        "m_picture": null,
+        "m_version": "0.0.11",
+        "m_longname": null,
+        "default_ttl": null,
+        "description": "Objects Statistics",
+        "m_external_id": null,
+        "m_manufacturer": "Pixel",
+        "application_owner": "b32dcad5-f93a-483f-b5a6-11399d5a25e1"
+    },
+    "properties": [
+        {
+            "mask": "",
+            "type": "string",
+            "index": 0,
+            "regex": "",
+            "units": "",
+            "hidden": false,
+            "property": "Function",
+            "value_set": {
+                "list": [
+                    {
+                        "key": "Average",
+                        "title": "Average"
+                    },
+                    {
+                        "key": "Min",
+                        "title": "Min"
+                    },
+                    {
+                        "key": "Max",
+                        "title": "Max"
+                    },
+                    {
+                        "key": "Custom",
+                        "title": "Custom"
+                    }
+                ],
+                "component": "select"
+            },
+            "group_name": "Settings",
+            "description": "Function",
+            "value_range": null,
+            "default_value": "Max",
+            "group_description": null
+        },
+        {
+            "mask": "",
+            "type": "string",
+            "index": 0,
+            "regex": "",
+            "units": "",
+            "hidden": false,
+            "property": "SchemaId",
+            "value_set": null,
+            "group_name": "Settings",
+            "description": "SchemaId",
+            "value_range": null,
+            "default_value": null,
+            "group_description": null
+        },
+        {
+            "mask": "",
+            "type": "json object",
+            "index": 0,
+            "regex": "",
+            "units": "",
+            "hidden": false,
+            "property": "Custom function",
+            "value_set": null,
+            "group_name": "Settings",
+            "description": "Custom javascript function",
+            "value_range": null,
+            "default_value": {"code": "function f(values) {return values.reduce(function(acc, val) { return acc + val; }, 0)}"},
+            "group_description": null
+        },
+        {
+            "mask": "",
+            "type": "string",
+            "index": 0,
+            "regex": "",
+            "units": "",
+            "hidden": false,
+            "property": "Property",
+            "value_set": null,
+            "group_name": "Settings",
+            "description": "Property",
+            "value_range": null,
+            "default_value": null,
+            "group_description": null
+        },
+        {
+            "mask": "",
+            "type": "json object",
+            "index": 0,
+            "regex": "",
+            "units": "",
+            "hidden": false,
+            "property": "Filter",
+            "value_set": null,
+            "group_name": "Settings",
+            "description": "Filter",
+            "value_range": null,
+            "default_value": {
+                "filtering": false,
+                "conditions": [
+                    {
+                        "property": "group/property",
+                        "operator": "==",
+                        "value": 0
+                    }
+                ]
+            },
+            "group_description": null
+        },
+        {
+            "mask": "",
+            "type": "bool",
+            "index": 0,
+            "regex": "",
+            "units": "",
+            "hidden": false,
+            "property": "Linked only",
+            "value_set": null,
+            "group_name": "Settings",
+            "description": "Linked only",
+            "value_range": null,
+            "default_value": false,
+            "group_description": null
+        },
+        {
+            "mask": "",
+            "type": "number",
+            "index": 0,
+            "regex": "",
+            "units": "",
+            "hidden": false,
+            "property": "Value",
+            "value_set": null,
+            "group_name": "Value",
+            "description": "Value",
+            "value_range": null,
+            "default_value": null,
+            "group_description": null
+        }
+    ]
+}

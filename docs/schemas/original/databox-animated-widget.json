@@ -1,0 +1,424 @@
+{
+    "schema": {
+        "id": "07dc5111-2c37-47fc-a539-2133bcaf3f18",
+        "name": "PixelBoard Databox Animated widget",
+        "type": "dataset",
+        "m_icon": null,
+        "m_tags": [
+            "application",
+            "board",
+            "widget",
+            "databox animated"
+        ],
+        "enabled": true,
+        "m_email": "support@pixel-networks.com",
+        "m_author": "Pixel",
+        "m_picture": null,
+        "m_version": "0.0.16",
+        "m_longname": null,
+        "default_ttl": null,
+        "description": "Databox is a simple widget designed to display the current property of the selected object. When creating a databox, it copies the current value of the property to itself, and then monitors its changes. If the property changes, the databox takes the new value and starts to output it. In addition, the databox has the ability to set from one to three critical events, in which the databox will issue an alarm.",
+        "m_external_id": "a6d25612-a711-4685-a46c-7d3b883f1747",
+        "m_manufacturer": "Pixel",
+        "application_owner": "b32dcad5-f93a-483f-b5a6-11399d5a25e1"
+    },
+    "properties": [
+        {
+            "mask": "",
+            "type": "string",
+            "index": 0,
+            "regex": "",
+            "units": "",
+            "hidden": false,
+            "property": "Color 1",
+            "value_set": {
+                "red": "Red",
+                "green": "Green",
+                "orange": "Orange",
+                "yellow": "Yellow",
+                "default": "Default"
+            },
+            "group_name": "Colors",
+            "description": "",
+            "value_range": null,
+            "default_value": "",
+            "group_description": null
+        },
+        {
+            "mask": "",
+            "type": "string",
+            "index": 0,
+            "regex": "",
+            "units": "",
+            "hidden": false,
+            "property": "Color 1 condition",
+            "value_set": null,
+            "group_name": "Colors",
+            "description": "",
+            "value_range": null,
+            "default_value": "",
+            "group_description": null
+        },
+        {
+            "mask": "",
+            "type": "string",
+            "index": 0,
+            "regex": "",
+            "units": "",
+            "hidden": false,
+            "property": "Color 2",
+            "value_set": {
+                "red": "Red",
+                "green": "Green",
+                "orange": "Orange",
+                "yellow": "Yellow",
+                "default": "Default"
+            },
+            "group_name": "Colors",
+            "description": "",
+            "value_range": null,
+            "default_value": "",
+            "group_description": null
+        },
+        {
+            "mask": "",
+            "type": "string",
+            "index": 0,
+            "regex": "",
+            "units": "",
+            "hidden": false,
+            "property": "Color 2 condition",
+            "value_set": null,
+            "group_name": "Colors",
+            "description": "",
+            "value_range": null,
+            "default_value": "",
+            "group_description": null
+        },
+        {
+            "mask": "",
+            "type": "string",
+            "index": 0,
+            "regex": "",
+            "units": "",
+            "hidden": false,
+            "property": "Color 3",
+            "value_set": {
+                "red": "Red",
+                "green": "Green",
+                "orange": "Orange",
+                "yellow": "Yellow",
+                "default": "Default"
+            },
+            "group_name": "Colors",
+            "description": "",
+            "value_range": null,
+            "default_value": "",
+            "group_description": null
+        },
+        {
+            "mask": "",
+            "type": "string",
+            "index": 0,
+            "regex": "",
+            "units": "",
+            "hidden": false,
+            "property": "Color 3 condition",
+            "value_set": null,
+            "group_name": "Colors",
+            "description": "",
+            "value_range": null,
+            "default_value": "",
+            "group_description": null
+        },
+        {
+            "mask": "",
+            "type": "string",
+            "index": 0,
+            "regex": "",
+            "units": "",
+            "hidden": false,
+            "property": "Default color",
+            "value_set": {
+                "red": "Red",
+                "green": "Green",
+                "orange": "Orange",
+                "yellow": "Yellow",
+                "default": "Default"
+            },
+            "group_name": "Colors",
+            "description": "",
+            "value_range": null,
+            "default_value": "Default",
+            "group_description": null
+        },
+        {
+            "mask": "",
+            "type": "string",
+            "index": 0,
+            "regex": "",
+            "units": "",
+            "hidden": false,
+            "property": "Format",
+            "value_set": {
+                "list": [
+                    {
+                        "key": "icon_value",
+                        "title": "Icon & Value"
+                    },
+                    {
+                        "key": "value",
+                        "title": "Value"
+                    }
+                ],
+                "component": "select"
+            },
+            "group_name": "Settings",
+            "description": "Format",
+            "value_range": null,
+            "default_value": "icon_value",
+            "group_description": null
+        },
+        {
+            "mask": "",
+            "type": "bool",
+            "index": 0,
+            "regex": "",
+            "units": "",
+            "hidden": false,
+            "property": "Full line",
+            "value_set": {
+                "component": "switch"
+            },
+            "group_name": "Settings",
+            "description": "Full line",
+            "value_range": null,
+            "default_value": false,
+            "group_description": null
+        },
+        {
+            "mask": "",
+            "type": "string",
+            "index": 0,
+            "regex": "",
+            "units": "",
+            "hidden": false,
+            "property": "Max value",
+            "value_set": {
+                "component": "number"
+            },
+            "group_name": "Settings",
+            "description": "Max value",
+            "value_range": null,
+            "default_value": "1000",
+            "group_description": null
+        },
+        {
+            "mask": "",
+            "type": "string",
+            "index": 0,
+            "regex": "",
+            "units": "",
+            "hidden": false,
+            "property": "Min value",
+            "value_set": {
+                "component": "number"
+            },
+            "group_name": "Settings",
+            "description": "Min value",
+            "value_range": null,
+            "default_value": "0",
+            "group_description": null
+        },
+        {
+            "mask": "",
+            "type": "bool",
+            "index": 0,
+            "regex": "",
+            "units": "",
+            "hidden": false,
+            "property": "Simulation",
+            "value_set": {
+                "component": "switch"
+            },
+            "group_name": "Settings",
+            "description": "Simulation",
+            "value_range": null,
+            "default_value": false,
+            "group_description": null
+        },
+        {
+            "mask": "",
+            "type": "string",
+            "index": 0,
+            "regex": "",
+            "units": "",
+            "hidden": false,
+            "property": "Size",
+            "value_set": {
+                "list": [
+                    {
+                        "key": "small",
+                        "title": "Small"
+                    },
+                    {
+                        "key": "medium",
+                        "title": "Medium"
+                    }
+                ],
+                "component": "select"
+            },
+            "group_name": "Settings",
+            "description": "Size",
+            "value_range": null,
+            "default_value": "small",
+            "group_description": null
+        },
+        {
+            "mask": "",
+            "type": "string",
+            "index": 0,
+            "regex": "",
+            "units": "",
+            "hidden": false,
+            "property": "Style",
+            "value_set": {
+                "list": [
+                    {
+                        "key": "lightondark",
+                        "title": "Light on dark"
+                    },
+                    {
+                        "key": "lightontransparent",
+                        "title": "Light on transparent"
+                    },
+                    {
+                        "key": "darkonlight",
+                        "title": "Dark on light"
+                    },
+                    {
+                        "key": "darkontransparent",
+                        "title": "Dark on transparent"
+                    }
+                ],
+                "component": "select"
+            },
+            "group_name": "Settings",
+            "description": "Style",
+            "value_range": null,
+            "default_value": "lightondark",
+            "group_description": null
+        },
+        {
+            "mask": "",
+            "type": "string",
+            "index": 0,
+            "regex": "",
+            "units": "",
+            "hidden": false,
+            "property": "Alarm",
+            "value_set": null,
+            "group_name": "Status",
+            "description": "",
+            "value_range": null,
+            "default_value": "Off",
+            "group_description": null
+        },
+        {
+            "mask": "",
+            "type": "string",
+            "index": 0,
+            "regex": "",
+            "units": "",
+            "hidden": false,
+            "property": "Connect status",
+            "value_set": null,
+            "group_name": "Status",
+            "description": "",
+            "value_range": null,
+            "default_value": "",
+            "group_description": null
+        },
+        {
+            "mask": "",
+            "type": "number",
+            "index": 0,
+            "regex": "",
+            "units": "",
+            "hidden": false,
+            "property": "Position",
+            "value_set": "",
+            "group_name": "Status",
+            "description": "Position",
+            "value_range": "",
+            "default_value": 0,
+            "group_description": null
+        },
+        {
+            "mask": "",
+            "type": "string",
+            "index": 0,
+            "regex": "",
+            "units": "",
+            "hidden": false,
+            "property": "Responce status",
+            "value_set": null,
+            "group_name": "Status",
+            "description": "",
+            "value_range": null,
+            "default_value": "",
+            "group_description": null
+        },
+        {
+            "mask": "",
+            "type": "string",
+            "index": 0,
+            "regex": "",
+            "units": "",
+            "hidden": false,
+            "property": "Current color",
+            "value_set": {
+                "red": "Red",
+                "green": "Green",
+                "orange": "Orange",
+                "yellow": "Yellow",
+                "default": "Default"
+            },
+            "group_name": "Value",
+            "description": "",
+            "value_range": null,
+            "default_value": "",
+            "group_description": null
+        },
+        {
+            "mask": "",
+            "type": "string",
+            "index": 0,
+            "regex": "",
+            "units": "",
+            "hidden": false,
+            "property": "Icon",
+            "value_set": "",
+            "group_name": "Value",
+            "description": "",
+            "value_range": "",
+            "default_value": "",
+            "group_description": null
+        },
+        {
+            "mask": "",
+            "type": "string",
+            "index": 0,
+            "regex": "",
+            "units": "",
+            "hidden": false,
+            "property": "Value",
+            "value_set": "",
+            "group_name": "Value",
+            "description": "",
+            "value_range": "",
+            "default_value": "",
+            "group_description": null
+        }
+    ]
+}

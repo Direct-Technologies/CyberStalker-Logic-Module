@@ -1,0 +1,15 @@
+aiohttp==3.7.4.post0
+gql==3.0.0a6
+websockets==10.0
+asyncio==3.4.3
+pandas==1.2.3
+pyyaml==5.4.1
+envyaml==1.7.210310
+backoff==1.10.0
+python-dateutil==2.8.1
+regex==2021.7.6
+turfpy==0.0.7
+geojson==2.5.0
+pyproj==3.1.0
+twilio==6.63.1
+js2py==0.71

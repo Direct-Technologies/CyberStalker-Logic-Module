@@ -1,0 +1,694 @@
+{
+    "schema": {
+        "id": "a6d25612-a711-4685-a46c-7d3b883f1747",
+        "name": "PixelBoard Databox widget",
+        "type": "dataset",
+        "m_icon": null,
+        "m_tags": [
+            "application",
+            "board",
+            "widget",
+            "databox"
+        ],
+        "enabled": true,
+        "m_email": "support@pixel-networks.com",
+        "m_author": "Pixel",
+        "m_picture": null,
+        "m_version": "0.0.23",
+        "m_longname": null,
+        "default_ttl": null,
+        "description": "Databox is a simple widget designed to display the current property of the selected object. When creating a databox, it copies the current value of the property to itself, and then monitors its changes. If the property changes, the databox takes the new value and starts to output it. In addition, the databox has the ability to set from one to three critical events, in which the databox will issue an alarm.",
+        "m_external_id": "a6d25612-a711-4685-a46c-7d3b883f1747",
+        "m_manufacturer": "Pixel",
+        "application_owner": "b32dcad5-f93a-483f-b5a6-11399d5a25e1"
+    },
+    "properties": [
+        {
+            "mask": "",
+            "type": "json object",
+            "index": 0,
+            "regex": "",
+            "units": "",
+            "hidden": false,
+            "property": "Alert1",
+            "value_set": null,
+            "group_name": "Alarms",
+            "description": "Alert 1 configuration",
+            "value_range": null,
+            "default_value": {
+                "timeout": {
+                    "units": "seconds",
+                    "value": 0
+                },
+                "condition": {
+                    "value": 0,
+                    "operator": "="
+                },
+                "timeIntervalInMinutes": {
+                    "to": 0,
+                    "from": 0
+                }
+            },
+            "group_description": null
+        },
+        {
+            "mask": "",
+            "type": "json object",
+            "index": 0,
+            "regex": "",
+            "units": "",
+            "hidden": false,
+            "property": "Alert2",
+            "value_set": null,
+            "group_name": "Alarms",
+            "description": "Alert 2 configuration",
+            "value_range": null,
+            "default_value": {
+                "timeout": {
+                    "units": "seconds",
+                    "value": 0
+                },
+                "condition": {
+                    "value": 0,
+                    "operator": "="
+                },
+                "timeIntervalInMinutes": {
+                    "to": 0,
+                    "from": 0
+                }
+            },
+            "group_description": null
+        },
+        {
+            "mask": "",
+            "type": "json object",
+            "index": 0,
+            "regex": "",
+            "units": "",
+            "hidden": false,
+            "property": "Alert3",
+            "value_set": null,
+            "group_name": "Alarms",
+            "description": "Alert 3 configuration",
+            "value_range": null,
+            "default_value": {
+                "timeout": {
+                    "units": "seconds",
+                    "value": 0
+                },
+                "condition": {
+                    "value": 0,
+                    "operator": "="
+                },
+                "timeIntervalInMinutes": {
+                    "to": 0,
+                    "from": 0
+                }
+            },
+            "group_description": null
+        },
+        {
+            "mask": "",
+            "type": "json object",
+            "index": 0,
+            "regex": "",
+            "units": "",
+            "hidden": false,
+            "property": "Color 1 condition",
+            "value_set": null,
+            "group_name": "Colors",
+            "description": "Color 1 condition",
+            "value_range": null,
+            "default_value": {
+            },
+            "group_description": null
+        },
+        {
+            "mask": "",
+            "type": "json object",
+            "index": 0,
+            "regex": "",
+            "units": "",
+            "hidden": false,
+            "property": "Color 2 condition",
+            "value_set": null,
+            "group_name": "Colors",
+            "description": "Color 2 condition",
+            "value_range": null,
+            "default_value": {
+            },
+            "group_description": null
+        },
+        {
+            "mask": "",
+            "type": "json object",
+            "index": 0,
+            "regex": "",
+            "units": "",
+            "hidden": false,
+            "property": "Color 3 condition",
+            "value_set": null,
+            "group_name": "Colors",
+            "description": "Color 3 condition",
+            "value_range": null,
+            "default_value": {
+            },
+            "group_description": null
+        },
+        {
+            "mask": "",
+            "type": "string",
+            "index": 0,
+            "regex": "",
+            "units": "",
+            "hidden": false,
+            "property": "Default color",
+            "value_set": {
+                "red": "Red",
+                "green": "Green",
+                "orange": "Orange",
+                "yellow": "Yellow",
+                "default": "Default"
+            },
+            "group_name": "Colors",
+            "description": "",
+            "value_range": null,
+            "default_value": "Default",
+            "group_description": null
+        },
+        {
+            "mask": "",
+            "type": "string",
+            "index": 0,
+            "regex": "",
+            "units": "",
+            "hidden": false,
+            "property": "Format",
+            "value_set": {
+                "list": [
+                    {
+                        "key": "icon_value",
+                        "title": "Icon & Value"
+                    },
+                    {
+                        "key": "icon",
+                        "title": "Icon"
+                    },
+                    {
+                        "key": "value",
+                        "title": "Value"
+                    }
+                ],
+                "component": "select"
+            },
+            "group_name": "Settings",
+            "description": "Format",
+            "value_range": null,
+            "default_value": "icon_value",
+            "group_description": null
+        },
+        {
+            "mask": "",
+            "type": "bool",
+            "index": 0,
+            "regex": "",
+            "units": "",
+            "hidden": false,
+            "property": "Full line",
+            "value_set": {
+                "component": "switch"
+            },
+            "group_name": "Settings",
+            "description": "Full line",
+            "value_range": null,
+            "default_value": false,
+            "group_description": null
+        },
+        {
+            "mask": "",
+            "type": "string",
+            "index": 0,
+            "regex": "",
+            "units": "",
+            "hidden": false,
+            "property": "Icon",
+            "value_set": {
+                "list": [
+                    {
+                        "key": "img_account",
+                        "title": "account"
+                    },
+                    {
+                        "key": "img_accountoutline",
+                        "title": "accountoutline"
+                    },
+                    {
+                        "key": "img_accountsupervisor",
+                        "title": "accountsupervisor"
+                    },
+                    {
+                        "key": "img_boomgate",
+                        "title": "boomgate"
+                    },
+                    {
+                        "key": "img_boomgatealert",
+                        "title": "boomgatealert"
+                    },
+                    {
+                        "key": "img_boomgateup",
+                        "title": "boomgateup"
+                    },
+                    {
+                        "key": "img_car",
+                        "title": "car"
+                    },
+                    {
+                        "key": "img_caroutline",
+                        "title": "caroutline"
+                    },
+                    {
+                        "key": "img_cart",
+                        "title": "cart"
+                    },
+                    {
+                        "key": "img_cartoutline",
+                        "title": "cartoutline"
+                    },
+                    {
+                        "key": "img_cctv",
+                        "title": "cctv"
+                    },
+                    {
+                        "key": "img_delete",
+                        "title": "delete"
+                    },
+                    {
+                        "key": "img_deletealert",
+                        "title": "deletealert"
+                    },
+                    {
+                        "key": "img_deleteoutline",
+                        "title": "deleteoutline"
+                    },
+                    {
+                        "key": "img_dolly",
+                        "title": "dolly"
+                    },
+                    {
+                        "key": "img_ferry",
+                        "title": "ferry"
+                    },
+                    {
+                        "key": "img_fridge",
+                        "title": "fridge"
+                    },
+                    {
+                        "key": "img_fridgealert",
+                        "title": "fridgealert"
+                    },
+                    {
+                        "key": "img_gaugeempty",
+                        "title": "gaugeempty"
+                    },
+                    {
+                        "key": "img_gaugefull",
+                        "title": "gaugefull"
+                    },
+                    {
+                        "key": "img_gaugelow",
+                        "title": "gaugelow"
+                    },
+                    {
+                        "key": "img_hammerwrench",
+                        "title": "hammerwrench"
+                    },
+                    {
+                        "key": "img_leaf",
+                        "title": "leaf"
+                    },
+                    {
+                        "key": "img_lightbulbon",
+                        "title": "lightbulbon"
+                    },
+                    {
+                        "key": "img_lightbulboutline",
+                        "title": "lightbulboutline"
+                    },
+                    {
+                        "key": "img_lock",
+                        "title": "lock"
+                    },
+                    {
+                        "key": "img_lockopen",
+                        "title": "lockopen"
+                    },
+                    {
+                        "key": "img_lockopenalert",
+                        "title": "lockopenalert"
+                    },
+                    {
+                        "key": "img_memory",
+                        "title": "memory"
+                    },
+                    {
+                        "key": "img_paperroll",
+                        "title": "paperroll"
+                    },
+                    {
+                        "key": "img_paperrolloutline",
+                        "title": "paperrolloutline"
+                    },
+                    {
+                        "key": "img_pipe",
+                        "title": "pipe"
+                    },
+                    {
+                        "key": "img_pipedisconnected",
+                        "title": "pipedisconnected"
+                    },
+                    {
+                        "key": "img_pipeleak",
+                        "title": "pipeleak"
+                    },
+                    {
+                        "key": "img_printer",
+                        "title": "printer"
+                    },
+                    {
+                        "key": "img_printeralert",
+                        "title": "printeralert"
+                    },
+                    {
+                        "key": "img_routerwireless",
+                        "title": "routerwireless"
+                    },
+                    {
+                        "key": "img_speedometer",
+                        "title": "speedometer"
+                    },
+                    {
+                        "key": "img_speedometermedium",
+                        "title": "speedometermedium"
+                    },
+                    {
+                        "key": "img_speedometerslow",
+                        "title": "speedometerslow"
+                    },
+                    {
+                        "key": "img_sprout",
+                        "title": "sprout"
+                    },
+                    {
+                        "key": "img_thermometer",
+                        "title": "thermometer"
+                    },
+                    {
+                        "key": "img_thermometerlow",
+                        "title": "thermometerlow"
+                    },
+                    {
+                        "key": "img_toilet",
+                        "title": "toilet"
+                    },
+                    {
+                        "key": "img_toilet_solid",
+                        "title": "toilet_solid"
+                    },
+                    {
+                        "key": "img_towtruck",
+                        "title": "towtruck"
+                    },
+                    {
+                        "key": "img_truck",
+                        "title": "truck"
+                    },
+                    {
+                        "key": "img_truckoutline",
+                        "title": "truckoutline"
+                    },
+                    {
+                        "key": "img_water",
+                        "title": "water"
+                    },
+                    {
+                        "key": "img_wateralert",
+                        "title": "wateralert"
+                    },
+                    {
+                        "key": "img_wateralertoutline",
+                        "title": "wateralertoutline"
+                    },
+                    {
+                        "key": "img_wateroutline",
+                        "title": "wateroutline"
+                    },
+                    {
+                        "key": "img_biohazardsolid",
+                        "title": "biohazardsolid"
+                    },
+                    {
+                        "key": "img_fansolid",
+                        "title": "fansolid"
+                    },
+                    {
+                        "key": "img_leafsolid",
+                        "title": "leafsolid"
+                    },
+                    {
+                        "key": "img_thermometerfullsolid",
+                        "title": "thermometerfullsolid"
+                    },
+                    {
+                        "key": "img_tintslashsolid",
+                        "title": "tintslashsolid"
+                    },
+                    {
+                        "key": "img_tintsolid",
+                        "title": "tintsolid"
+                    },
+                    {
+                        "key": "img_userssolid",
+                        "title": "userssolid"
+                    }
+                ],
+                "component": "selecticon"
+            },
+            "group_name": "Settings",
+            "description": "Icon",
+            "value_range": null,
+            "default_value": "4c4ee6db-a193-4c78-83fc-bf8f61d81987",
+            "group_description": null
+        },
+        {
+            "mask": "",
+            "type": "bool",
+            "index": 0,
+            "regex": "",
+            "units": "",
+            "hidden": false,
+            "property": "New line",
+            "value_set": {
+                "component": "switch"
+            },
+            "group_name": "Settings",
+            "description": "End of Line",
+            "value_range": null,
+            "default_value": null,
+            "group_description": null
+        },
+        {
+            "mask": "",
+            "type": "bool",
+            "index": 0,
+            "regex": "",
+            "units": "",
+            "hidden": false,
+            "property": "Simulation",
+            "value_set": {
+                "component": "switch"
+            },
+            "group_name": "Settings",
+            "description": "Simulation",
+            "value_range": null,
+            "default_value": false,
+            "group_description": null
+        },
+        {
+            "mask": "",
+            "type": "string",
+            "index": 0,
+            "regex": "",
+            "units": "",
+            "hidden": false,
+            "property": "Size",
+            "value_set": {
+                "list": [
+                    {
+                        "key": "small",
+                        "title": "Small"
+                    },
+                    {
+                        "key": "medium",
+                        "title": "Medium"
+                    }
+                ],
+                "component": "select"
+            },
+            "group_name": "Settings",
+            "description": "Size",
+            "value_range": null,
+            "default_value": "small",
+            "group_description": null
+        },
+        {
+            "mask": "",
+            "type": "string",
+            "index": 0,
+            "regex": "",
+            "units": "",
+            "hidden": false,
+            "property": "Style",
+            "value_set": {
+                "list": [
+                    {
+                        "key": "lightondark",
+                        "title": "Light on dark"
+                    },
+                    {
+                        "key": "lightontransparent",
+                        "title": "Light on transparent"
+                    },
+                    {
+                        "key": "darkonlight",
+                        "title": "Dark on light"
+                    },
+                    {
+                        "key": "darkontransparent",
+                        "title": "Dark on transparent"
+                    }
+                ],
+                "component": "select"
+            },
+            "group_name": "Settings",
+            "description": "Style",
+            "value_range": null,
+            "default_value": "lightondark",
+            "group_description": null
+        },
+        {
+            "mask": "",
+            "type": "string",
+            "index": 0,
+            "regex": "",
+            "units": "",
+            "hidden": false,
+            "property": "Alarm",
+            "value_set": {
+                "list": [
+                    {
+                        "key": "off",
+                        "title": "Off"
+                    },
+                    {
+                        "key": "on",
+                        "title": "On"
+                    },
+                    {
+                        "key": "triggered",
+                        "title": "Triggered"
+                    }
+                ],
+                "component": "select"
+            },
+            "group_name": "Status",
+            "description": "Alarm",
+            "value_range": null,
+            "default_value": "off",
+            "group_description": null
+        },
+        {
+            "mask": "",
+            "type": "string",
+            "index": 0,
+            "regex": "",
+            "units": "",
+            "hidden": false,
+            "property": "Connect status",
+            "value_set": null,
+            "group_name": "Status",
+            "description": "",
+            "value_range": null,
+            "default_value": "",
+            "group_description": null
+        },
+        {
+            "mask": "",
+            "type": "string",
+            "index": 0,
+            "regex": "",
+            "units": "",
+            "hidden": false,
+            "property": "Response status",
+            "value_set": null,
+            "group_name": "Status",
+            "description": null,
+            "value_range": null,
+            "default_value": "",
+            "group_description": null
+        },
+        {
+            "mask": "",
+            "type": "string",
+            "index": 0,
+            "regex": "",
+            "units": "",
+            "hidden": false,
+            "property": "Current color",
+            "value_set": {
+                "list": [
+                    {
+                        "key": "red",
+                        "title": "Red"
+                    },
+                    {
+                        "key": "green",
+                        "title": "Green"
+                    },
+                    {
+                        "key": "orange",
+                        "title": "Orange"
+                    },
+                    {
+                        "key": "yellow",
+                        "title": "Yellow"
+                    },
+                    {
+                        "key": "default",
+                        "title": "Default"
+                    }
+                ],
+                "component": "select"
+            },
+            "group_name": "Value",
+            "description": "Current color",
+            "value_range": null,
+            "default_value": "default",
+            "group_description": null
+        },
+        {
+            "mask": "",
+            "type": "string",
+            "index": 0,
+            "regex": "",
+            "units": "",
+            "hidden": false,
+            "property": "Value",
+            "value_set": null,
+            "group_name": "Value",
+            "description": "Value",
+            "value_range": null,
+            "default_value": "0",
+            "group_description": null
+        }
+    ]
+}

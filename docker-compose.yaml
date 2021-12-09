@@ -1,0 +1,13 @@
+version: '3.1'
+
+services:
+  pixel-business-logic-dispatcher:
+    container_name: pixel-business-logic-dispatcher
+    image: pixel-business-logic-dispatcher:latest
+    restart: unless-stopped
+    environment: 
+      POSTGRES_DB: pixelcore
+      POSTGRES_HOST: "172.16.24.4:5432" 
+      GQL_HOST: "172.16.24.4:5000"
+      ADMIN_WORKER_PASSWORD: mysecretpassword
+      USER_MANAGEMENT_WORKER_PASSWORD: mysecretpassword

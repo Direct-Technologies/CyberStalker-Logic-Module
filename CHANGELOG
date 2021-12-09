@@ -1,0 +1,1146 @@
+# Changelog - Pixel Business Logic Dispatcher
+
+----
+## Version 2.0.138
+
+Changed:
+* Updated board schemas.
+* Added reports to the add monitor objects RPC.
+* The add monitor objects RPC now sets the position of the newly created object based on spatial information from the associated device.
+* Optimization of add monitor objects RPC queries. 
+
+----
+## Version 2.0.137
+
+Changed:
+* Extended keep alive timeout on websocket connections.
+
+----
+## Version 2.0.136
+
+Changed:
+* Updated monitor app profile schema.
+
+----
+## Version 2.0.135
+
+Added:
+* Object id field to the controls subscription.
+
+Changed:
+* Moved update widgets positions RPC to the board groups.
+* Removed all parameters from update widgets positions RPC.
+
+----
+## Version 2.0.133
+
+Added:
+* Property Status/Position (number) for all board widgets.
+* RPC for updating the positions statuses for an array of widgets.
+
+----
+## Version 2.0.132
+
+Added:
+* Resolver for states on board widget.
+
+Fixed:
+* Typecasting from string to boolean.
+
+----
+## Version 2.0.130 - 2.0.131
+
+Changed:
+* Merge with gitlab changes.
+* Upgrading pixctl.
+
+----
+## Version 2.0.129
+
+Added:
+* Restart dispatcher RPC. Kills the dispatcher module.
+
+Changed:
+* Improved documentation.
+
+----
+## Version 2.0.128
+
+Added:
+* Check for already provisioned devices when adding devices in bulk from the monitoring app. Devices that are already linked to a monitor object will be skipped over.
+
+----
+## Version 2.0.127
+
+Added:
+* Custom javascript function in objects statistics.
+
+----
+## Version 2.0.126
+
+Changed:
+* Improved objects statistics behaviour on restart and reconfiguration.
+
+Fixed:
+* Removed counter from objects statistics to avoid filtering bug.
+
+----
+## Version 2.0.125
+
+Changed:
+* Template for naming notifications on monitoring items.
+
+Fixed:
+* Bug in the alarm loop where alarms triggered consecutively on items of an object would switch the object alarm status from triggered to on.
+
+----
+## Version 2.0.124
+
+Changed:
+* Refactoring counter statistics worker.
+
+----
+## Version 2.0.123
+
+Changed:
+* Split the counter statistics as its own worker separate from objects statistics.
+* Updated default icons to be white.
+
+----
+## Version 2.0.122
+
+Changed:
+* Disabled info logs on coordinates resolver.
+
+Fixed:
+* Stale subscription on objects statistics (temporary disabled filtering).
+* Typo in objects statistics schema.
+
+----
+## Version 2.0.121
+
+Fixed:
+* Image building error.
+
+----
+## Version 2.0.120
+
+Fixed:
+* Issue with statistics subscription giving stale information.
+
+----
+## Version 2.0.119
+
+Changed:
+* Updated RPC for bulk creation of monitor objects from devices. Now uses core linking mechanism.
+
+----
+## Version 2.0.118
+
+Changed:
+* Updated schemas for new rpc format.
+
+----
+## Version 2.0.117
+
+Added:
+* Resolution of alarms on databox widgets.
+
+Changed:
+* Updated Pixel Board schemas.
+* New tags for statistics objects.
+
+Fixed:
+* Wrong schema for admin user profiles.
+
+----
+## Version 2.0.116
+
+Changed:
+* Streamlined statistics calculation.
+
+----
+## Version 2.0.115
+
+Fixed:
+* Filtering of timeseries based period expressed in seconds now excludes last entry.
+* Issue where two subscriptions for the same statistics object could be created on dispatcher startup.
+
+----
+## Version 2.0.114
+
+Fixed:
+* Logic for queue size.
+
+----
+## Version 2.0.113
+
+Added:
+* Documentation.
+* Object statistics workers.
+
+Changed:
+* Cleaned the folder structure of the dispatcher.
+* Refactored alarms workers.
+* Refactored notification delivery workers.
+
+----
+## Version 2.0.111
+
+Changed:
+* Increased timeout for coordinates resolution.
+* Refactoring and improvements of coordinates resolution algorithm.
+* Refactoring geo alarms worker.
+
+Fixed:
+* Issue when geo alarms could get stuck in a loop of repeated dismissed alarms.
+
+----
+## Version 2.0.108
+
+Changed:
+* New logic on the RPC for bulk creation of monitor objects.
+
+Fixed:
+* Keyword error on geo alarms.
+* Bulk creation of objects is now done by placing them at the center of the map on the viewport.
+
+----
+## Version 2.0.107
+
+Fixed:
+* Fixed issue where websockets could hang forever on lost connections.
+
+----
+## Version 2.0.106
+
+Changed:
+* Updated PixelBoard schemas.
+* Updated PixelMonitor schemas.
+
+----
+## Version 2.0.105
+
+Added:
+* Structure for AddMonitorObjects RPC.
+
+Changed:
+* Updated PixelBoard schemas.
+* Updated PixelMonitor profile schema.
+
+----
+## Version 2.0.104
+
+Changed:
+* Updated PixelBoard schemas.
+
+----
+## Version 2.0.103
+
+Changed:
+* Updated PixelMonitor schemas.
+
+----
+## Version 2.0.102
+
+Changed:
+* Updated PixelBoard schemas.
+
+----
+## Version 2.0.101
+
+Added:
+* Tags are appended to the email delivery subject line.
+* Email delivery configurations now allow to filter notifications by tags. Only the notifications matching all the tags provided in the config will be delivered. 
+* Twilio integration for SMS deliveries.
+
+Changed:
+* On startup pixctl is now responsible to import schemas and patches.
+* On startup pixctl is provisioning generic media files.
+
+Fixed:
+* Refined 'check online status' task query filter to avoid picking up unrelated objects.
+
+Issues:
+* Twilio integration complete. (close #3)
+* Migration to pixctl for startup sequence complete. (close #7)
+
+----
+## Version 2.0.100
+
+Changed:
+* User profile schemas have reference to app URL and icon.
+
+----
+## Version 2.0.99
+
+Changed:
+* Email configuration objects now track the status of email deliveries.
+* Email deliveries now update the status of their configuration objects.
+
+Fixed:
+* Issue where the dispatcher was trying to update the status of configurations (instead of just applications).
+
+Closed issues:
+* #2 SMTP delivery integration.
+
+----
+## Version 2.0.97
+
+Changed:
+* Enabled notification deliveries.
+
+----
+## Version 2.0.96
+
+Added:
+* Program/Name to apps schemas.
+
+Changed:
+* Updated the Settings group of the board widget schemas.
+
+----
+## Version 2.0.95
+
+Added:
+* Notification delivery worker which combines all delivery paths in a single subscription.
+
+----
+## Version 2.0.94
+
+Changed:
+* Enabled resolution of coordinates in scanner and beacon modes.
+
+----
+## Version 2.0.93
+
+Fixed:
+* Added error handling for geo_source == "" in alarms.
+
+----
+## Version 2.0.92
+
+Changed:
+* Format of notification messages.
+* Updated montitor schema names.
+
+----
+## Version 2.0.91
+
+Added:
+* Triggered tag on alarm trigger notifications.
+
+Changed:
+* Fragments notifications message format.
+
+Fixed:
+* Issue with repeated dismissed notifications.
+* Processing of statuses.
+
+----
+## Version 2.0.90
+
+Added:
+* Resolver for monitor objects statuses.
+* GPS status update on coordinates resolution.
+
+----
+## Version 2.0.89
+
+Fixed:
+* Prevent 'alarm dismissed' notifications to be sent on the initialization step.
+* Geo alarms are now resolved properly when alert conditions overlap on different geo items.
+
+----
+## Version 2.0.88
+
+Added:
+* Notifications are now created on alarms being dismissed.
+
+Changed:
+* Coordinates resolution now takes care of the altitude.
+* Subject name is now populated when notifications are generated.
+* Moved noitifications on fragments to the container object level.
+* Improvements on messages for notifications on monitor objects.
+
+----
+## Version 2.0.87
+
+Added:
+* Requirement for pyproj (3.1.0).
+
+Fixed:
+* Fixed issue where 'TRIGGERED' alarm events on monitor object was linked to fragments instead of object.
+* Now handling coordinates transformations between EPSG:4326 and EPSG:3857 for geo zones.
+* Now handling exception of empty geo source.
+
+----
+## Version 2.0.86
+
+Changed:
+* Enabled monitor coordinates resolution based on GPS sources (without altitude).
+* Increased minimum coordinates resolution frequency (5 seconds).
+
+----
+## Version 2.0.85
+
+Added:
+* Resolve geo alarms on monitor items for landmarks (distance and inside types).
+* Position/Sources property on monitor object schema.
+* Geojson version 2.5.0 requirment.
+* Schema datachart Settings/Full line:bool:false
+
+Changed:
+* Changed subscription filter tags on monitor object alarms to allow for geo items and monitor items on the same subscription.
+
+Fixed:
+* Type error in monitor states resolution.
+* Landmark schema owner id default switched to __owner_id.
+
+----
+## Version 2.0.84
+
+Changed:
+* Removed value set = 0 from dispatcher schema.
+* In the board, the value property of the following widgets have been changed to string type: slider, switcher, databox, counter, weatherbox.
+
+Fixed:
+* Updated the processing of monitor items with no alarms configured to comply with new default/type.
+
+----
+## Version 2.0.83
+
+Fixed: 
+* Proper json types in schemas.
+
+----
+## Version 2.0.82
+
+Fixed:
+* Checking if online apps are alive now using the proper type.
+
+----
+## Version 2.0.81
+
+Changed:
+* Added logic to handle unlinking of property values for monitor alerts.
+* Updated property types and default values in schemas.
+
+----
+## Version 2.0.80
+
+Added:
+* Subscription and worker for alarms on monitor geo items.
+* Requirement for turfpy module (manipulation of geospatial data).
+
+Fixed:
+* Removed json casting for alarms on monitor items.
+* Typos in schemas.
+
+----
+## Version 2.0.79
+
+Changed:
+* Copy schemas are now imported with update only set to true.
+* Updated PixelBoard schemas default values.
+
+----
+## Version 2.0.78
+
+Fixed:
+* PixelBoard Group schema General/Order default.
+
+----
+## Version 2.0.77
+
+Changed:
+* Updated workers and jobs to use proper JSON formatting.
+* Updated workers and jobs to remove usage of the deprecated updateObjectProperties mutation.
+* Updated notifications processing. 
+* All schemas fields updated to correct format.
+* Removed yaml schemas.
+* Updated RPCs.
+
+----
+## Version 2.0.76
+
+Changed:
+* Migrating the dispatcher processes to use JSON values for properties to comply with updated database structure.
+* Migrating away from deprecated updateObjectProperties mutation.
+
+----
+## Version 2.0.75
+
+Added:
+* Notifications are now created when monitor alerts/alarms are created.
+* Processing of copy schemas during the dispatcher setup. Schema files ending in '.copy' are imported in two versions. The original version is the unmodified schema. The copy version is the original schema with the last tag removed.
+
+----
+## Version 2.0.74
+
+Added:
+* Dedicated loggers for alarms and states tasks.
+
+Changed:
+* Special processing for malformed conditions on alarms.
+
+Fixed:
+* Reordered processing of alert states to fix delay issues on creation of new alarms.
+* Now enforcing unique delays on alerts.
+* Now filtering out delete from states subscriptions to avoid NoneType errors.
+
+----
+## Version 2.0.73
+
+Changed:
+* Updated monitor schemas.
+
+Fixed:
+* Updated ON/OFF/TRIGGERED conditions for monitor object alarms.
+
+----
+## Version 2.0.72
+
+Changed:
+* Updated monitor alarms logic.
+
+----
+## Version 2.0.71
+
+Changed:
+* Added various properties to the board schemas.
+
+----
+## Version 2.0.70
+
+Changed:
+* Added State/Alarm bool to monitor items.
+* Added General/Order json to board groups.
+
+----
+## Version 2.0.69
+
+Changed:
+* Reorganised alarms processing on monitor objects.
+
+----
+## Version 2.0.68
+
+Changed:
+* Updated logic for resolving standard alarms on monitor objects.
+
+WIP:
+* Fixing synchronisation issues between alarms states accross async tasks. 
+
+----
+## Version 2.0.67
+
+Added:
+* Structure for the workers resolving standard alarms on monitor objects.
+
+----
+## Version 2.0.66
+
+Fixed:
+* Changed filtering tags to be able to process all types (before would only process generic).
+
+----
+## Version 2.0.65
+
+Updated:
+* Monitor states conditions applied by alphanumeric order of names.
+* Monitor states resolving now supports the string 'contains' operator.
+* Monitor states resolving now skips over malformed states conditions (instead of preventing the resolution of the state).
+
+----
+## Version 2.0.64
+
+Updated:
+* Logic for workers to resolve monitor object states.
+
+----
+## Version 2.0.63
+
+Added:
+* Logic for workers to resolve monitor objects states.
+
+----
+## Version 2.0.62
+
+Changed:
+* Updated schemas.
+
+----
+## Version 2.0.61
+
+Fixed:
+* Typo.
+
+----
+## Version 2.0.60
+
+### Dispatcher 
+
+Changed:
+* Authentication method and schemas import sequence updated to conform to the new permission system.
+
+----
+## Version 2.0.59
+
+### Dispatcher 
+
+Changed:
+* Refactored email delivery workers to comply with changes in data structure.
+
+----
+## Version 2.0.58
+
+### Dispatcher 
+
+Changed:
+* Update of the tags used by system alarms. Now 'admin', 'alert', 'system'.
+* Refactoring of the system alarm worker.
+* The delivery worker for system alarms now uses the schema tags 'application', 'admin', 'noitification' and 'email' to identify email configuration objects.
+* The delivery worker for system alarms now sends one email notification for each valid email configuration object on the platform.
+* Removed default email configuarations objects provisioned during the dispatcher setup.
+* Refactoring of subscriptions for system alarm notifications.
+
+----
+## Version 2.0.57
+
+### Dispatcher 
+
+Fixed:
+* Removed duplicate in import schema sequence.
+
+----
+## Version 2.0.56
+
+### Dispatcher 
+
+Changed:
+* Update on monitor schemata.
+
+----
+## Version 2.0.55
+
+### Dispatcher 
+
+Added:
+* New schemas for monitor.
+
+Changed:
+* Restructured schemas to comply with new import processing.
+* Refactored notifications workers.
+
+----
+## Version 2.0.54
+
+### Dispatcher 
+
+Changed:
+* System alarms upgraded to the new notifications structure.
+* System alarms deliveries upgraded to the new notifications structure.
+* All schemas are now using Admin as the default editorgroup.
+
+----
+## Version 2.0.53
+
+### Dispatcher 
+
+Added:
+* Gitlab CI yaml.
+
+Changed:
+* Image renamed to pix-dispatcher.
+
+----
+## Version 2.0.52
+
+### Dispatcher 
+
+Changed:
+* Types update.
+
+----
+## Version 2.0.51
+
+### Dispatcher 
+
+Fixed:
+* Fixed authentication sequence of the dispatcher submodules.
+
+----
+## Version 2.0.50
+
+### Dispatcher 
+
+Changed:
+* Authentication method updated to comply with new data structure.
+
+----
+## Version 2.0.49
+
+### Board 
+
+Added:
+* Fragments for counter widget.
+
+### Dispatcher
+
+Changed:
+* Schemas changed from yaml to json.
+* The setup sequence is using json instead of yaml for schema imports.
+
+----
+## Version 2.0.48
+
+### Board 
+
+Added:
+* Fragment schema for counter widget conditions.
+
+----
+## Version 2.0.47
+
+### Monitor 
+
+Fixed:
+* Typo in JSON schema.
+
+----
+## Version 2.0.46
+
+### Monitor
+
+Added:
+* Schema for generic object.
+
+Changed:
+* Updated monitor schemas.
+
+----
+## Version 2.0.45
+
+### Dispatcher
+
+Changed:
+* Removed transaction size and meta fields from queries to comply with new data structure.
+* Reorganized the schemas to comply with new data structure.
+
+### Board 
+
+Changed:
+* Reworked container schema for the counter widget.
+
+----
+## Version 2.0.44
+
+### Dispatcher 
+
+Added:
+* GPS coordinates resolving.
+* Beacons based coordinates resolving.
+* Scanner based coordinates resolving.
+
+----
+## Version 2.0.43
+
+### Dispatcher 
+
+Added:
+* Structure for coordinates solver job.
+
+----
+## Version 2.0.42
+
+### Dispatcher
+
+Changed:
+* New version of Pixel Monitor landmark schema.
+* New version of Pixel Monitor geozone schema.
+
+----
+## Version 2.0.41
+
+### Dispatcher 
+
+Fixed:
+* Changed datetime parser to be compatible with date format ISO 8601 used in the database.
+
+----
+## Version 2.0.40
+
+### Dispatcher
+
+Added:
+* Support for alarms on items.
+
+Changed:
+* Logging rules for tasks backoff on exception.
+* Bumped schemas versions for upgrade on existing deployments.
+
+### Board 
+
+Changed:
+* The counter widget job can now process an arbitrary number of alarms. 
+* Improved efficiency by reducing the number of API calls on each widget alarm cycle.
+* Lowered minimum refresh rate for counter widget jobs.
+
+----
+## Version 2.0.39
+
+### Dispatcher 
+
+Added:
+* Check that pix-api is ready before startup sequence.
+
+Changed:
+* Refactored startup process.
+
+----
+## Version 2.0.38
+
+### Dispatcher 
+
+Changed:
+* Removed delays in RPCs.
+* Requirements moved up in the docker image layers.
+
+### Board 
+
+Changed:
+* The counter widget tasks subcription now restarts with an exponential backoff on exceptions.
+
+### Monitor 
+
+Changed:
+* New version of the monitor plan schema.
+
+
+----
+## Version 2.0.37
+
+### Board 
+
+Added:
+* Counter widget job.
+* Counter widget filtered subscriptions.
+* Counter widget worker.
+
+Changed:
+* Updated structure of the board_workers submodule.
+
+----
+## Version 2.0.36
+
+### Dispatcher 
+
+This updates implements a major restructuring of the dispatcher.
+
+Added:
+* RestartTask is a new RPC that takes a task name as imput and restarts a task provisioned in the dispatcher.
+* Specific logging on controls and submodules.
+* New section in the dispatcher profile describing tasks by submodules and their configurations.
+ 
+Changed:
+* The dispatcher now creates a pool of tasks (subscriptions, workers and jobs) on startup. 
+* Tasks are described in the dispatcher profile as properties and with task parameters as values.
+* Calling the RestartTask RPC on a task applies changes in the tasks parameters.
+* Each worker now has a dedicated subscription with targeted filter.
+* The startup procedure now runs as follows:
+    1. Generate tokens for the dispatcher and the dispatcher modules and start refresh tokens process.
+    2. Create a subcription on controls to handle the dispatcher RPCs.
+    3. Start 'is alive status' job for the dispatcher.
+    4. Start 'check apps status' job.
+    5. Create the tasks pool based on the dispatcher profile.
+
+----
+## Version 2.0.35
+
+### Dispatcher 
+
+Added:
+* Support for workers running on a periodic schedule (those workers are referred to as jobs).
+* New jobs section in the dispatcher configuaration describing what periodic jobs are to be run by each submodule.
+
+Changed:
+* Removed default debug events logging on subscription.
+
+### Board 
+
+Added:
+* Widget counter job taking care of the alarms of the widget counter.
+
+Changed:
+* Widget counter schema now reflects the backend logic for alarms.
+
+----
+## Version 2.0.34
+
+### Board 
+
+Added:
+* Description of the logic for the widget counter worker.
+
+Changed:
+* Refactored widget filtering to optimize for speed.
+
+----
+## Version 2.0.33
+
+### Board 
+
+Added:
+* Widget counter worker powering the counter widgets.
+
+Changed:
+* Modified the schema for the board counter widgets to accomodate backend logic.
+
+----
+## Version 2.0.32
+
+Added:
+* Implemented a basic version of the TestModule RPC to be used for functional testing for the dispatcher.
+
+----
+## Version 2.0.31
+
+Changed:
+* Python libraries are installed with static versions.
+* Updated the default values of the admin user profile.
+
+----
+## Version 2.0.30
+
+### Dispatcher 
+
+Fixed:
+* Various schemas changes.
+
+----
+## Version 2.0.29
+
+### Dispatcher
+
+Added:
+* Board worker module for the dashboard app.
+
+Changed:
+* Split the setup process between the submodules.
+* The admin worker module is responsible to import the schemas and objects related to the admin application.
+* The board worker module is responsible to import the schemas and objects related to the board application.
+* The user management worker module is responsible to import the schemas and objects related user management actions on the platform.
+* The dispatcher worker module is responsible to import the schemas and objects that have not been taken care of by any of the submodules.
+* The schemas have been updated to remove the application owner field (and the id field for app profile schemas).
+
+----
+## Version 2.0.28
+
+### Dispatcher 
+
+Fixed:
+* Mutations to queries update.
+* Changed 'media_server' to 'mediaserver' in the media server schema (cbcaf2f7-40d4-4ccf-994b-bb0fc18120bc).
+
+----
+## Version 2.0.27
+
+### Dispatcher 
+
+Changed:
+* A set of mutations has been changed to queries to comply with data structure changes (db version 1.0.52).
+* For the 'Media file' schema (f063b287-0041-4b3a-abf5-cfcd708bf454) the mimetype is moved to the media group (previously credentials).
+
+Notes:
+* Refactoring.
+
+----
+## Version 2.0.26
+
+### Dispatcher 
+
+Changed:
+* Turn off fetch schema from transport in gql clients config.
+
+----
+## Version 2.0.25
+
+### Dispatcher 
+
+Added:
+* New applications schemata added to the setup process.
+
+Changed:
+* Now using the getUserProfileId mutation for the 'is alive' process.
+
+Fixed:
+* Improvements in error handling within the subscription and dispatching processes.
+
+----
+## Version 2.0.24
+
+### Dispatcher 
+
+Changed:
+* Updated GraphQL queries to comply with datastructure changes (db version 1.0.50).
+
+### Admin workers 
+
+Added:
+* New worker to deliver emails for user generated notifications that are not a direct message
+
+Changed:
+* New message formatting for direct messages.
+* The notification tag for notifications generated by an application changed from 'root' to 'system'. 
+* The 'admin' tag triggers a process of mass notification.
+
+----
+## Version 2.0.23
+
+### Dispatcher 
+
+Changed:
+* Updated GraphQL queries to comply with changes in 'type' fields.
+
+Fixed:
+* Fixed a bug where null health check parameters blocked the update application status process. 
+
+### Admin workers 
+
+Added:
+* The notification systems now supports email notifications for direct messages (user to user). Direct messages are generated by creating a notification with the 'direct message' tag and a 'to' field in the notification spec that indicates the uuid of the addressee.
+* Message field to notifications for human readable info.
+
+----
+## Version 2.0.21
+
+### Dispatcher 
+
+Changed:
+* Subcriptions channels are now split between controls, objects, notifications and misc to avoid fields with conflicting type GraphQL error.
+
+### Admin workers 
+
+Changed:
+* System alarm workers (notifications and deliveries) is updated to comply with changes in the data structure. 
+
+----
+## Version 2.0.20
+
+### Dispatcher 
+
+Fixed:
+* Updating names to comply with change in data structure.
+* Fixed an application status bug.
+
+----
+## Version 2.0.19
+
+### Dispatcher 
+
+Added:
+* Username and password are new setting properties of the HTTP brigde schema.
+
+Changed:
+* Applied proper tags to the HTTP bridge schema.
+* The healt check status field description is changed to true/false and the description is updated to 'Application online' (the name of the property remains 'Status').
+
+Fixed:
+* Refactored GraphQL queries.
+
+----
+## Version 2.0.18
+
+### Dispatcher 
+
+Added:
+* Http bridge schema.
+
+Fixed:
+* Check status exception handling for missing parameters.
+* Added required fields to reports of the ResetAccessTokens RPC.
+
+----
+## Version 2.0.17
+
+### Dispatcher 
+
+Added:
+* A process checks and update the online/offline status of other applications at a set time interval.
+* The monitoring application now as a schema created during the dispatcher startup.
+
+----
+## Version 2.0.16
+
+### Dispatcher
+
+Added:
+* Dispatcher is alive status message worker.
+
+----
+## Version 2.0.15
+
+### Dispatcher
+
+Added:
+* Added health check fields for status, message status and status timeout.
+
+Changed:
+* Default objects are no longer created during the setup process.
+* Schemas are now compatible with application objects autocreation.
+* The dispatcher rules have changed. Tags are used for objects events, users events and notifications events. Objects tags, group names and property names are used for object properties events.
+
+Fixed:
+* Added required fields for the check status RPC. 
+
+----
+## Version 2.0.9
+
+### Dispatcher
+
+Added:
+* Processing of RPC and stealth RPC.
+* Created a 'check_status' RPC to check on the status of the dispatcher module.
+* Created a 'reset_access_tokens' RPC to force a reset of all GQL access tokens in the environment of the dispatcher.
+* Statistics tracking total number of emails, SMS and WhatsApp deliveries by the dispatcher.
+
+Changed:
+* Logging settings are configured to enhance visibility of the subprocesses of the dispatcher.
+
+Fixed:
+* Fixed an issue during the partition startup process where the dispatcher could start without the required schemas and objects being provisioned.
+
+----
+## Version 2.0.2 - Alpha release
+
+### Dispatcher
+
+Features:
+* Configurable and extensible event driven workers automation. 
+* Monitors the Pixel Core database to spawn workers based on configurable dispatching rules.
+* Create custom workers and manage their triggering conditions through the dispatcher configuration.
+* Supports automation of user management tasks (see below).
+* Supports automation of Pixel Admin tasks (see below).
+
+### User management workers
+
+Workers related to user management tasks on the Pixel platform.
+
+Features:
+* Platform users onboarding automation.
+* Generate onboarding email for new users.
+* Platform users password reset automation. 
+* Generate reset password email upon request.
+* Customizable email notifications object.
+
+### Admin workers
+
+Workers related to the Pixel Admin app.
+
+Features:
+* System alarms notifications generator. 
+* Create notifications for unresponsive or low battery devices.
+* Email notifications generator. Sends notifications via email based on users preferences.
+* Customizable email notifications object.
+

@@ -1,0 +1,176 @@
+{
+    "schema": {
+        "id": "494f2a82-ba59-4a4f-a23b-517ea5ebe481",
+        "name": "PixelBoard Group",
+        "type": "dataset",
+        "m_icon": null,
+        "m_tags": [
+            "application",
+            "board",
+            "group"
+        ],
+        "enabled": true,
+        "m_email": "support@pixel-networks.com",
+        "m_author": "Pixel",
+        "m_picture": null,
+        "m_version": "0.0.18",
+        "m_longname": null,
+        "default_ttl": null,
+        "description": null,
+        "m_external_id": "494f2a82-ba59-4a4f-a23b-517ea5ebe481",
+        "m_manufacturer": "Pixel",
+        "application_owner": "b32dcad5-f93a-483f-b5a6-11399d5a25e1"
+    },
+    "controls": [
+        {
+            "rpc": "UpdateWidgetsPositions",
+            "mask": "",
+            "regex": "",
+            "units": "",
+            "hidden": false,
+            "argument": "UpdateWidgetsPositions",
+            "type_spec": "",
+            "value_set": {
+            },
+            "description": "Update widgets positions",
+            "value_range": {
+            },
+            "default_value": {
+            }
+        }
+    ],
+    "properties": [
+        {
+            "mask": "",
+            "type": "number",
+            "index": 0,
+            "regex": "",
+            "units": "",
+            "hidden": false,
+            "property": "Column",
+            "value_set": {
+                "component": "number"
+            },
+            "group_name": "General",
+            "description": "Column",
+            "value_range": null,
+            "default_value": 1,
+            "group_description": null
+        },
+        {
+            "mask": "",
+            "type": "number",
+            "index": 0,
+            "regex": "",
+            "units": "",
+            "hidden": false,
+            "property": "Columns count",
+            "value_set": {
+                "component": "number"
+            },
+            "group_name": "General",
+            "description": "Columns count",
+            "value_range": {
+                "max": 6,
+                "min": 1
+            },
+            "default_value": 3,
+            "group_description": null
+        },
+        {
+            "mask": "",
+            "type": "json object",
+            "index": 0,
+            "regex": "",
+            "units": "",
+            "hidden": true,
+            "property": "Layouts",
+            "value_set": null,
+            "group_name": "General",
+            "description": "Layout",
+            "value_range": null,
+            "default_value": {
+                "lg": [
+                ],
+                "md": [
+                ],
+                "sm": [
+                ],
+                "xs": [
+                ],
+                "xxs": [
+                ]
+            },
+            "group_description": null
+        },
+        {
+            "mask": "",
+            "type": "json array",
+            "index": 0,
+            "regex": "",
+            "units": "",
+            "hidden": true,
+            "property": "Order",
+            "value_set": null,
+            "group_name": "General",
+            "description": "Order",
+            "value_range": null,
+            "default_value": [
+                {
+                }
+            ],
+            "group_description": null
+        },
+        {
+            "mask": "",
+            "type": "number",
+            "index": 0,
+            "regex": "",
+            "units": "",
+            "hidden": false,
+            "property": "Row",
+            "value_set": {
+                "component": "number"
+            },
+            "group_name": "General",
+            "description": "Row",
+            "value_range": null,
+            "default_value": 1,
+            "group_description": null
+        },
+        {
+            "mask": "",
+            "type": "number",
+            "index": 0,
+            "regex": "",
+            "units": "",
+            "hidden": false,
+            "property": "Row count",
+            "value_set": {
+                "component": "number"
+            },
+            "group_name": "General",
+            "description": "Row count",
+            "value_range": null,
+            "default_value": 1,
+            "group_description": null
+        },
+        {
+            "mask": "",
+            "type": "bool",
+            "index": 0,
+            "regex": "",
+            "units": "",
+            "hidden": false,
+            "property": "Use height",
+            "value_set": {
+                "component": "switch"
+            },
+            "group_name": "General",
+            "description": "Use height",
+            "value_range": null,
+            "default_value": false,
+            "group_description": null
+        }
+    ]
+}

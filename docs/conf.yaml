@@ -1,0 +1,134 @@
+---
+processes:
+  is_alive_timeout: 60
+  check_status_timeout: 60
+db:
+  db: ${POSTGRES_DB}
+  address: "${POSTGRES_HOST}"
+gql:
+  address: "${GQL_HOST}"
+  refresh_token_timeout: 3600
+apps:
+  dispatcher:
+    user: "dispatcher"
+    password: "${DISPATCHER_PASSWORD}"
+    rpc:
+      - check_status
+      - reset_access_tokens
+      - restart_task
+      - test_module
+      - add_monitor_objects
+      - restart_dispatcher
+      - update_widgets_positions
+    topics:
+      - controls:
+          test_module: "*"
+          reset_access_tokens: "*" 
+          check_status: "*"
+    jobs:
+  admin:
+    user: "admin_worker"
+    password: "${ADMIN_WORKER_PASSWORD}"
+    topics:
+      - objects:
+          admin_system_alarm_worker: "[*]Measurements/BATTERY_LOW,[*]Measurements/RESPONSE_STATUS"
+      - notifications:
+          admin_system_alarm_email_worker: "system"
+          admin_direct_message_email_worker: "direct message"
+          admin_mass_notification_email_worker: "admin"
+    jobs:
+  user_management:
+    user: "user_management_worker"
+    password: "${USER_MANAGEMENT_WORKER_PASSWORD}"
+    topics:
+      - misc:
+          user_management_worker: "*"
+      - notifications:
+          user_management_email_worker: "[user_management]"
+    jobs:
+  board:
+    user: "board_worker"
+    password: "${BOARD_WORKER_PASSWORD}"
+    topics:
+      - objects:
+          widget_counter_worker: "*"
+    jobs:
+      - widget_counter_job
+logging:
+  version: 1
+  disable_existing_loggers: true
+  formatters:
+    simple:
+      format: '%(asctime)s - %(name)s - %(levelname)s - %(message)s'
+  handlers:
+    console:
+      class: logging.StreamHandler
+      level: DEBUG
+      formatter: simple
+      stream: ext://sys.stdout
+    file:
+      class : logging.FileHandler
+      level: DEBUG
+      formatter: simple
+      filename: dispatcher.log
+  loggers:
+    auth:
+      level: INFO 
+      handlers: [console, file]
+      propagate: yes
+    admin:
+      level: INFO 
+      handlers: [console, file]
+      propagate: no
+    alarms:
+      level: INFO
+      handlers: [console, file]
+      propagate: no 
+    controls:
+      level: INFO
+      handlers: [console, file]
+      propagate: no 
+    setup:
+      level: INFO 
+      handlers: [console, file]
+      propagate: no 
+    states:
+      level: INFO
+      handlers: [console, file]
+      propagate: no 
+    statistics:
+      level: INFO 
+      handlers: [console, file]
+      propagate: no 
+    dispatcher:
+      level: INFO
+      handlers: [console, file]
+      propagate: no 
+    resolve coordinates:
+      level: INFO
+      handlers: [console, file]
+      propagate: no 
+    email notification delivery:
+      level: INFO
+      handlers: [console, file]
+      propagate: no 
+    notification delivery:
+      level: INFO
+      handlers: [console, file]
+      propagate: no 
+    subs:
+      level: INFO 
+      handlers: [console, file]
+      propagate: no 
+    user_management:
+      level: INFO
+      handlers: [console, file]
+      propagate: no
+    board:
+      level: INFO 
+      handlers: [console, file]
+      propagate: no
+  root:
+    level: INFO
+    handlers: [console, file]
+...

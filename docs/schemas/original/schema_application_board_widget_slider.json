@@ -1,0 +1,247 @@
+{
+    "schema": {
+        "id": "e2b22486-b276-4c5b-b9fd-3a7f2c1ee53c",
+        "name": "PixelBoard Slider widget",
+        "type": "dataset",
+        "m_icon": null,
+        "m_tags": [
+            "application",
+            "board",
+            "widget",
+            "slider"
+        ],
+        "enabled": true,
+        "m_email": "support@pixel-networks.com",
+        "m_author": "Pixel",
+        "m_picture": null,
+        "m_version": "0.0.16",
+        "m_longname": null,
+        "default_ttl": null,
+        "description": null,
+        "m_external_id": "e2b22486-b276-4c5b-b9fd-3a7f2c1ee53c",
+        "m_manufacturer": "Pixel",
+        "application_owner": "b32dcad5-f93a-483f-b5a6-11399d5a25e1"
+    },
+    "properties": [
+        {
+            "mask": "",
+            "type": "bool",
+            "index": 0,
+            "regex": "",
+            "units": "",
+            "hidden": false,
+            "property": "Full line",
+            "value_set": {
+                "component": "switch"
+            },
+            "group_name": "Settings",
+            "description": "Full line",
+            "value_range": null,
+            "default_value": false,
+            "group_description": null
+        },
+        {
+            "mask": "",
+            "type": "number",
+            "index": 0,
+            "regex": "",
+            "units": "",
+            "hidden": false,
+            "property": "Max value",
+            "value_set": {
+                "component": "number"
+            },
+            "group_name": "Settings",
+            "description": "Max value",
+            "value_range": null,
+            "default_value": 100,
+            "group_description": null
+        },
+        {
+            "mask": "",
+            "type": "number",
+            "index": 0,
+            "regex": "",
+            "units": "",
+            "hidden": false,
+            "property": "Min value",
+            "value_set": {
+                "component": "number"
+            },
+            "group_name": "Settings",
+            "description": "Min value",
+            "value_range": null,
+            "default_value": 0,
+            "group_description": null
+        },
+        {
+            "mask": "",
+            "type": "bool",
+            "index": 0,
+            "regex": "",
+            "units": "",
+            "hidden": false,
+            "property": "Simulation",
+            "value_set": {
+                "component": "switch"
+            },
+            "group_name": "Settings",
+            "description": "Simulation",
+            "value_range": null,
+            "default_value": false,
+            "group_description": null
+        },
+        {
+            "mask": "",
+            "type": "string",
+            "index": 0,
+            "regex": "",
+            "units": "",
+            "hidden": false,
+            "property": "Size",
+            "value_set": {
+                "list": [
+                    {
+                        "key": "small",
+                        "title": "Small"
+                    },
+                    {
+                        "key": "medium",
+                        "title": "Medium"
+                    }
+                ],
+                "component": "select"
+            },
+            "group_name": "Settings",
+            "description": "Size",
+            "value_range": null,
+            "default_value": "small",
+            "group_description": null
+        },
+        {
+            "mask": "",
+            "type": "string",
+            "index": 0,
+            "regex": "",
+            "units": "",
+            "hidden": false,
+            "property": "Style",
+            "value_set": {
+                "list": [
+                    {
+                        "key": "lightondark",
+                        "title": "Light on dark"
+                    },
+                    {
+                        "key": "lightontransparent",
+                        "title": "Light on transparent"
+                    },
+                    {
+                        "key": "darkonlight",
+                        "title": "Dark on light"
+                    },
+                    {
+                        "key": "darkontransparent",
+                        "title": "Dark on transparent"
+                    }
+                ],
+                "component": "select"
+            },
+            "group_name": "Settings",
+            "description": "Style",
+            "value_range": null,
+            "default_value": "lightondark",
+            "group_description": null
+        },
+        {
+            "mask": "",
+            "type": "string",
+            "index": 0,
+            "regex": "",
+            "units": "",
+            "hidden": false,
+            "property": "Control",
+            "value_set": "",
+            "group_name": "Source",
+            "description": "",
+            "value_range": "",
+            "default_value": "",
+            "group_description": null
+        },
+        {
+            "mask": "",
+            "type": "number",
+            "index": 0,
+            "regex": "",
+            "units": "",
+            "hidden": false,
+            "property": "Parametr",
+            "value_set": null,
+            "group_name": "Source",
+            "description": "",
+            "value_range": null,
+            "default_value": 0,
+            "group_description": null
+        },
+        {
+            "mask": "",
+            "type": "string",
+            "index": 0,
+            "regex": "",
+            "units": "",
+            "hidden": false,
+            "property": "Connect status",
+            "value_set": null,
+            "group_name": "Status",
+            "description": "",
+            "value_range": null,
+            "default_value": "",
+            "group_description": null
+        },
+        {
+            "mask": "",
+            "type": "number",
+            "index": 0,
+            "regex": "",
+            "units": "",
+            "hidden": false,
+            "property": "Position",
+            "value_set": "",
+            "group_name": "Status",
+            "description": "Position",
+            "value_range": "",
+            "default_value": 0,
+            "group_description": null
+        },
+        {
+            "mask": "",
+            "type": "string",
+            "index": 0,
+            "regex": "",
+            "units": "",
+            "hidden": false,
+            "property": "Response status",
+            "value_set": null,
+            "group_name": "Status",
+            "description": "",
+            "value_range": null,
+            "default_value": "",
+            "group_description": null
+        },
+        {
+            "mask": "",
+            "type": "number",
+            "index": 0,
+            "regex": "",
+            "units": "",
+            "hidden": false,
+            "property": "Value",
+            "value_set": null,
+            "group_name": "Value",
+            "description": "",
+            "value_range": null,
+            "default_value": 0,
+            "group_description": null
+        }
+    ]
+}

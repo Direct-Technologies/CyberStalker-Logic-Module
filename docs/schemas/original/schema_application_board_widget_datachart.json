@@ -1,0 +1,436 @@
+{
+    "schema": {
+        "id": "05966c17-7c12-488a-adc1-b2953f9f2a47",
+        "name": "PixelBoard Datachart widget",
+        "type": "dataset",
+        "m_icon": null,
+        "m_tags": [
+            "application",
+            "board",
+            "widget",
+            "datachart"
+        ],
+        "enabled": true,
+        "m_email": "support@pixel-networks.com",
+        "m_author": "Pixel",
+        "m_picture": null,
+        "m_version": "0.0.20",
+        "m_longname": null,
+        "default_ttl": null,
+        "description": "A widget that combines a graph and a table: it can display a graph of one to three properties of different objects in a selected time interval and optionally display property parameters such as the current value, minimum and maximum values for the period, and the average value for the period. 240 points are used for plotting each graph, and additional parameters are available for the graph, such as the settings for displaying axes, the coordinate grid, and the appearance of the graph itself.",
+        "m_external_id": "05966c17-7c12-488a-adc1-b2953f9f2a47",
+        "m_manufacturer": "Pixel",
+        "application_owner": "b32dcad5-f93a-483f-b5a6-11399d5a25e1"
+    },
+    "properties": [
+        {
+            "mask": "",
+            "type": "bool",
+            "index": 0,
+            "regex": "",
+            "units": "",
+            "hidden": false,
+            "property": "Full line",
+            "value_set": {
+                "component": "switch"
+            },
+            "group_name": "Settings",
+            "description": "Full line",
+            "value_range": null,
+            "default_value": false,
+            "group_description": null
+        },
+        {
+            "mask": "",
+            "type": "string",
+            "index": 0,
+            "regex": "",
+            "units": "",
+            "hidden": true,
+            "property": "Mode",
+            "value_set": {
+                "list": [
+                    {
+                        "key": "chart",
+                        "title": "Chart Only"
+                    },
+                    {
+                        "key": "legend",
+                        "title": "Chart with Legend"
+                    }
+                ],
+                "component": "select"
+            },
+            "group_name": "Settings",
+            "description": "Mode",
+            "value_range": null,
+            "default_value": "legend",
+            "group_description": null
+        },
+        {
+            "mask": "",
+            "type": "bool",
+            "index": 0,
+            "regex": "",
+            "units": "",
+            "hidden": false,
+            "property": "New line",
+            "value_set": {
+                "component": "switch"
+            },
+            "group_name": "Settings",
+            "description": "End of Line",
+            "value_range": null,
+            "default_value": null,
+            "group_description": null
+        },
+        {
+            "mask": "",
+            "type": "bool",
+            "index": 0,
+            "regex": "",
+            "units": "",
+            "hidden": false,
+            "property": "Simulation",
+            "value_set": {
+                "component": "switch"
+            },
+            "group_name": "Settings",
+            "description": "Simulation",
+            "value_range": null,
+            "default_value": false,
+            "group_description": null
+        },
+        {
+            "mask": "",
+            "type": "string",
+            "index": 0,
+            "regex": "",
+            "units": "",
+            "hidden": false,
+            "property": "Size",
+            "value_set": {
+                "list": [
+                    {
+                        "key": "small",
+                        "title": "Small"
+                    },
+                    {
+                        "key": "medium",
+                        "title": "Medium"
+                    },
+                    {
+                        "key": "large",
+                        "title": "Large"
+                    }
+                ],
+                "component": "select"
+            },
+            "group_name": "Settings",
+            "description": "Size",
+            "value_range": null,
+            "default_value": "small",
+            "group_description": null
+        },
+        {
+            "mask": "",
+            "type": "string",
+            "index": 0,
+            "regex": "",
+            "units": "",
+            "hidden": false,
+            "property": "Style",
+            "value_set": {
+                "list": [
+                    {
+                        "key": "lightondark",
+                        "title": "Light on dark"
+                    },
+                    {
+                        "key": "lightontransparent",
+                        "title": "Light on transparent"
+                    },
+                    {
+                        "key": "darkonlight",
+                        "title": "Dark on light"
+                    },
+                    {
+                        "key": "darkontransparent",
+                        "title": "Dark on transparent"
+                    }
+                ],
+                "component": "select"
+            },
+            "group_name": "Settings",
+            "description": "Style",
+            "value_range": null,
+            "default_value": "lightondark",
+            "group_description": null
+        },
+        {
+            "mask": "",
+            "type": "string",
+            "index": 0,
+            "regex": "",
+            "units": "",
+            "hidden": false,
+            "property": "Time interval",
+            "value_set": {
+                "list": [
+                    {
+                        "key": "lasthour",
+                        "title": "Last hour"
+                    },
+                    {
+                        "key": "last12hours",
+                        "title": "Last 12 hours"
+                    },
+                    {
+                        "key": "lastday",
+                        "title": "Last day"
+                    },
+                    {
+                        "key": "lastweek",
+                        "title": "Last week"
+                    },
+                    {
+                        "key": "lastmonth",
+                        "title": "Last month"
+                    }
+                ],
+                "component": "select"
+            },
+            "group_name": "Settings",
+            "description": "Time interval",
+            "value_range": null,
+            "default_value": "lastweek",
+            "group_description": null
+        },
+        {
+            "mask": "",
+            "type": "string",
+            "index": 0,
+            "regex": "",
+            "units": "",
+            "hidden": false,
+            "property": "Object 1 ID",
+            "value_set": "",
+            "group_name": "Source",
+            "description": "",
+            "value_range": "",
+            "default_value": "",
+            "group_description": null
+        },
+        {
+            "mask": "",
+            "type": "string",
+            "index": 0,
+            "regex": "",
+            "units": "",
+            "hidden": false,
+            "property": "Object 1 Property",
+            "value_set": "",
+            "group_name": "Source",
+            "description": "",
+            "value_range": "",
+            "default_value": "",
+            "group_description": null
+        },
+        {
+            "mask": "",
+            "type": "string",
+            "index": 0,
+            "regex": "",
+            "units": "",
+            "hidden": false,
+            "property": "Object 2 ID",
+            "value_set": "",
+            "group_name": "Source",
+            "description": "",
+            "value_range": "",
+            "default_value": "",
+            "group_description": null
+        },
+        {
+            "mask": "",
+            "type": "string",
+            "index": 0,
+            "regex": "",
+            "units": "",
+            "hidden": false,
+            "property": "Object 2 Property",
+            "value_set": "",
+            "group_name": "Source",
+            "description": "",
+            "value_range": "",
+            "default_value": "",
+            "group_description": null
+        },
+        {
+            "mask": "",
+            "type": "string",
+            "index": 0,
+            "regex": "",
+            "units": "",
+            "hidden": false,
+            "property": "Object 3 ID",
+            "value_set": "",
+            "group_name": "Source",
+            "description": "",
+            "value_range": "",
+            "default_value": "",
+            "group_description": null
+        },
+        {
+            "mask": "",
+            "type": "string",
+            "index": 0,
+            "regex": "",
+            "units": "",
+            "hidden": false,
+            "property": "Object 3 Property",
+            "value_set": "",
+            "group_name": "Source",
+            "description": "",
+            "value_range": "",
+            "default_value": "",
+            "group_description": null
+        },
+        {
+            "mask": "",
+            "type": "string",
+            "index": 0,
+            "regex": "",
+            "units": "",
+            "hidden": false,
+            "property": "Connect status",
+            "value_set": null,
+            "group_name": "Status",
+            "description": "",
+            "value_range": null,
+            "default_value": "",
+            "group_description": null
+        },
+        {
+            "mask": "",
+            "type": "number",
+            "index": 0,
+            "regex": "",
+            "units": "",
+            "hidden": false,
+            "property": "Position",
+            "value_set": "",
+            "group_name": "Status",
+            "description": "Position",
+            "value_range": "",
+            "default_value": 0,
+            "group_description": null
+        },
+        {
+            "mask": "",
+            "type": "string",
+            "index": 0,
+            "regex": "",
+            "units": "",
+            "hidden": false,
+            "property": "Response status",
+            "value_set": null,
+            "group_name": "Status",
+            "description": null,
+            "value_range": null,
+            "default_value": "",
+            "group_description": null
+        },
+        {
+            "mask": "",
+            "type": "json array",
+            "index": 0,
+            "regex": "",
+            "units": "",
+            "hidden": false,
+            "property": "Chart 1",
+            "value_set": null,
+            "group_name": "Value",
+            "description": null,
+            "value_range": null,
+            "default_value": [
+            ],
+            "group_description": null
+        },
+        {
+            "mask": "",
+            "type": "string",
+            "index": 0,
+            "regex": "",
+            "units": "",
+            "hidden": false,
+            "property": "Chart 2",
+            "value_set": "",
+            "group_name": "Value",
+            "description": "",
+            "value_range": "",
+            "default_value": "",
+            "group_description": null
+        },
+        {
+            "mask": "",
+            "type": "string",
+            "index": 0,
+            "regex": "",
+            "units": "",
+            "hidden": false,
+            "property": "Chart 3",
+            "value_set": "",
+            "group_name": "Value",
+            "description": "",
+            "value_range": "",
+            "default_value": "",
+            "group_description": null
+        },
+        {
+            "mask": "",
+            "type": "string",
+            "index": 0,
+            "regex": "",
+            "units": "",
+            "hidden": false,
+            "property": "Object 1 Label",
+            "value_set": "",
+            "group_name": "Value",
+            "description": "",
+            "value_range": "",
+            "default_value": "",
+            "group_description": null
+        },
+        {
+            "mask": "",
+            "type": "string",
+            "index": 0,
+            "regex": "",
+            "units": "",
+            "hidden": false,
+            "property": "Object 2 Label",
+            "value_set": "",
+            "group_name": "Value",
+            "description": "",
+            "value_range": "",
+            "default_value": "",
+            "group_description": null
+        },
+        {
+            "mask": "",
+            "type": "string",
+            "index": 0,
+            "regex": "",
+            "units": "",
+            "hidden": false,
+            "property": "Object 3 Label",
+            "value_set": "",
+            "group_name": "Value",
+            "description": "",
+            "value_range": "",
+            "default_value": "",
+            "group_description": null
+        }
+    ]
+}

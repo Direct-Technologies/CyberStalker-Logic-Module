@@ -1,0 +1,82 @@
+{
+  "schema": {
+    "id": "24beccf9-f30f-4b91-82cc-10078bd8c8bc",
+    "name": "PixelMonitor Object State, Template",
+    "type": "dataset",
+    "m_icon": null,
+    "m_tags": ["application", "monitor", "object state", "generic"],
+    "enabled": true,
+    "m_email": "support@pixel-networks.com",
+    "m_author": "Pixel",
+    "m_picture": null,
+    "m_version": "0.0.8",
+    "m_longname": null,
+    "default_ttl": null,
+    "description": null,
+    "m_external_id": null,
+    "m_manufacturer": "Pixel",
+    "application_owner": "b32dcad5-f93a-483f-b5a6-11399d5a25e1"
+  },
+  "properties": [
+    {
+      "mask": "",
+      "type": "string",
+      "index": 0,
+      "regex": "",
+      "units": "",
+      "hidden": false,
+      "property": "Color",
+      "value_set": "",
+      "group_name": "State",
+      "description": "",
+      "value_range": "",
+      "default_value": "",
+      "group_description": null
+    },
+    {
+      "mask": "",
+      "type": "json object",
+      "index": 0,
+      "regex": "",
+      "units": "",
+      "hidden": false,
+      "property": "Condition",
+      "value_set": "",
+      "group_name": "State",
+      "description": "",
+      "value_range": "",
+      "default_value": {"operator": "=", "value": 0},
+      "group_description": null
+    },
+    {
+      "mask": "",
+      "type": "string",
+      "index": 0,
+      "regex": "",
+      "units": "",
+      "hidden": false,
+      "property": "Icon",
+      "value_set": "",
+      "group_name": "State",
+      "description": "",
+      "value_range": "",
+      "default_value": "",
+      "group_description": null
+    },
+    {
+      "mask": "",
+      "type": "string",
+      "index": 0,
+      "regex": "",
+      "units": "",
+      "hidden": false,
+      "property": "Value",
+      "value_set": "",
+      "group_name": "State",
+      "description": "",
+      "value_range": "",
+      "default_value": "",
+      "group_description": null
+    }
+  ]
+}

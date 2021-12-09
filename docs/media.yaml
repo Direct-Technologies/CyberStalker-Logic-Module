@@ -1,0 +1,203 @@
+kind: MediaFilesList
+name: Default media files
+files:
+  ./docs/media/account-outline.svg:
+    name: Account outline
+    id: 0f5a854c-515a-47b4-adde-cc7623d3eac4
+    tags: ["application", "monitor", "icon"]
+  ./docs/media/account-supervisor.svg:
+    name: Account supervisor
+    id: 187262d2-3707-4b68-ba57-36b644f4e313
+    tags: ["application", "monitor", "icon"]
+  ./docs/media/account.svg:
+    name: Account
+    id: 7b25a934-77d3-4636-a5fd-482f1c67a6c7
+    tags: ["application", "monitor", "icon"]
+  ./docs/media/boom-gate-alert.svg:
+    name: Boom gate alert
+    id: 6af20378-4298-4e3e-ab72-d00205db5490
+    tags: ["application", "monitor", "icon"]
+  ./docs/media/boom-gate-up.svg:
+    name: Boom gate up
+    id: 6433780b-b8fe-47aa-8ed2-808c00bcc01b
+    tags: ["application", "monitor", "icon"]
+  ./docs/media/boom-gate.svg:
+    name: Boom gate
+    id: 31e7d65b-8eee-4b7b-964f-d7bfe76f1cbe
+    tags: ["application", "monitor", "icon"]
+  ./docs/media/car-outline.svg:
+    name: Car outline
+    id: aa5be950-2bc0-4e8a-9227-1aedc464aeb9
+    tags: ["application", "monitor", "icon"]
+  ./docs/media/cart.svg:
+    name: Cart
+    id: 364194e5-290d-488d-94b3-5b48e01361fd
+    tags: ["application", "monitor", "icon"]
+  ./docs/media/cctv.svg:
+    name: CCTV
+    id: 53ff38a9-ce7c-4db9-8469-80a65774c487
+    tags: ["application", "monitor", "icon"]
+  ./docs/media/delete-alert.svg:
+    name: Delete alert
+    id: 7c5e3b05-abf5-4ec0-bfc5-287e1f40a659
+    tags: ["application", "monitor", "icon"]
+  ./docs/media/delete-outline.svg:
+    name: Delete outline
+    id: ec48e1a0-0dbc-4785-aedb-d7aaaefbbbe6
+    tags: ["application", "monitor", "icon"]
+  ./docs/media/delete.svg:
+    name: Delete
+    id: c1b52142-b2f5-4caf-9cb8-0139a5cf7e09
+    tags: ["application", "monitor", "icon"]
+  ./docs/media/dolly.svg:
+    name: Dolly
+    id: f9a5ebdc-377e-4734-aad5-c2d9db500525
+    tags: ["application", "monitor", "icon"]
+  ./docs/media/ferry.svg:
+    name: Ferry
+    id: 5eaa48b5-5dcd-4115-90be-7c0f6457cb25
+    tags: ["application", "monitor", "icon"]
+  ./docs/media/fridge-alert.svg:
+    name: Fridge alert
+    id: 5853bca2-1918-439d-ae04-bdc462adf4dc
+    tags: ["application", "monitor", "icon"]
+  ./docs/media/fridge.svg:
+    name: Fridge
+    id: 69e247ee-17f8-4b80-8c02-4bcbefca9a78
+    tags: ["application", "monitor", "icon"]
+  ./docs/media/gauge-empty.svg:
+    name: Gauge empty
+    id: 59b596dc-e2d4-47ef-b758-6153a5c317a5
+    tags: ["application", "monitor", "icon"]
+  ./docs/media/gauge-full.svg:
+    name: Gauge full
+    id: e6108529-a60f-40cc-9410-7747e0bd4436
+    tags: ["application", "monitor", "icon"]
+  ./docs/media/gauge-low.svg:
+    name: Gauge low
+    id: c589fa52-68ca-4995-94bf-b097292793ab
+    tags: ["application", "monitor", "icon"]
+  ./docs/media/hammer-wrench.svg:
+    name: Hammer wrench
+    id: 96f09976-9c4d-400b-b067-95435adb6946
+    tags: ["application", "monitor", "icon"]
+  ./docs/media/leaf.svg:
+    name: Leaf
+    id: 6ccb8730-62b8-4e49-b088-088e1922768b
+    tags: ["application", "monitor", "icon"]
+  ./docs/media/lightbulb-on.svg:
+    name: Lightbulb on
+    id: d37512f3-d2b7-493a-a6ec-2bef3a3df1b8
+    tags: ["application", "monitor", "icon"]
+  ./docs/media/lightbulb-outline.svg:
+    name: Lightbulb outline
+    id: f819adb3-211d-40ba-ab6a-d58efba92a68
+    tags: ["application", "monitor", "icon"]
+  ./docs/media/lock-open-alert.svg:
+    name: Lock open alert
+    id: d9e2bcd8-5a65-4ab4-bf09-de20297fa62b
+    tags: ["application", "monitor", "icon"]
+  ./docs/media/lock-open.svg:
+    name: Lock open
+    id: f6a4d7e8-eb82-44bf-bb5c-5a13ee2f4b19
+    tags: ["application", "monitor", "icon"]
+  ./docs/media/lock.svg:
+    name: Lock
+    id: 12a14862-2d45-4a5d-b454-b11c3e86c8d9
+    tags: ["application", "monitor", "icon"]
+  ./docs/media/memory.svg:
+    name: Memory
+    id: a73a4297-11a4-4b37-bb7c-a6a55c08c362
+    tags: ["application", "monitor", "icon"]
+  ./docs/media/paper-roll-outline.svg:
+    name: Paper roll outline
+    id: 0fa7004b-68f6-4630-bdf4-8a4b3846925c
+    tags: ["application", "monitor", "icon"]
+  ./docs/media/paper-roll.svg:
+    name: Paper roll
+    id: 64f47712-d35f-4890-9a23-c38cefc5041f
+    tags: ["application", "monitor", "icon"]
+  ./docs/media/pipe-disconnected.svg:
+    name: Pipe disconnected
+    id: ce5543b1-89a8-4f35-ba0b-246f33e0fa29
+    tags: ["application", "monitor", "icon"]
+  ./docs/media/pipe-leak.svg:
+    name: Pipe leak
+    id: 0a777f67-db20-48af-83c9-80e04c915fe6
+    tags: ["application", "monitor", "icon"]
+  ./docs/media/pipe.svg:
+    name: Pipe
+    id: 88daa685-5200-497f-bd3a-f833faaa7c75
+    tags: ["application", "monitor", "icon"]
+  ./docs/media/printer-alert.svg:
+    name: Printer alert
+    id: 8c82e713-2998-471c-bc89-563bb371b5e5
+    tags: ["application", "monitor", "icon"]
+  ./docs/media/printer.svg:
+    name: Printer
+    id: 0f88ffdc-d39e-426c-bc71-39b851242949
+    tags: ["application", "monitor", "icon"]
+  ./docs/media/router-wireless.svg:
+    name: Router wireless
+    id: 426f8afc-8ee7-428c-94aa-c9823ee0b1e1
+    tags: ["application", "monitor", "icon"]
+  ./docs/media/speedometer-medium.svg:
+    name: Speedometer medium
+    id: 21277beb-ccca-4a6e-ae25-aca7723357ae
+    tags: ["application", "monitor", "icon"]
+  ./docs/media/speedometer-slow.svg:
+    name: Speedometer slow
+    id: 1bda3332-a407-449a-a02a-cad9fd3b739b
+    tags: ["application", "monitor", "icon"]
+  ./docs/media/speedometer.svg:
+    name: Speedometer
+    id: 9bb3148f-611a-4127-897a-527f750b0de4
+    tags: ["application", "monitor", "icon"]
+  ./docs/media/sprout.svg:
+    name: Sprout
+    id: 4717cba1-8fb4-4eef-9dba-0d7eaba014fe
+    tags: ["application", "monitor", "icon"]
+  ./docs/media/thermometer-low.svg:
+    name: Thermometer low
+    id: 4c4ee6db-a193-4c78-83fc-bf8f61d81987
+    tags: ["application", "monitor", "icon"]
+  ./docs/media/thermometer.svg:
+    name: Thermometer
+    id: ae54b4aa-4e0b-4fdd-8c81-e6a8bbc17667
+    tags: ["application", "monitor", "icon"]
+  ./docs/media/toilet_solid.svg:
+    name: Toilet solid
+    id: ce663d21-653e-45a8-bed6-ab2b50e1468d
+    tags: ["application", "monitor", "icon"]
+  ./docs/media/toilet.svg:
+    name: Toilet
+    id: bb5f9ca6-8651-422f-9166-ecb8084ee64a
+    tags: ["application", "monitor", "icon"]
+  ./docs/media/tow-truck.svg:
+    name: Tow truck
+    id: 9eb9c394-c179-4f13-a94d-d7be5d5d6bfa
+    tags: ["application", "monitor", "icon"]
+  ./docs/media/truck-outline.svg:
+    name: Truck outline
+    id: c5da4c2e-e9f9-4d9c-9632-37c9fa36c27c
+    tags: ["application", "monitor", "icon"]
+  ./docs/media/truck.svg:
+    name: Truck
+    id: 0ba1d188-a287-4a03-bf2f-f9be86c2e1b8
+    tags: ["application", "monitor", "icon"]
+  ./docs/media/water-alert-outline.svg:
+    name: Water alert outline
+    id: ededed2f-2ca5-4c87-bc2a-4f3352149a93
+    tags: ["application", "monitor", "icon"]
+  ./docs/media/water-alert.svg:
+    name: Water alert
+    id: e01e5377-e863-4427-847a-84e0393430d5
+    tags: ["application", "monitor", "icon"]
+  ./docs/media/water-outline.svg:
+    name: Water outline
+    id: a3bed00a-eb2d-4ab0-96e7-2c6287ddad49
+    tags: ["application", "monitor", "icon"]
+  ./docs/media/water.svg:
+    name: Water
+    id: ced4db98-aebc-4db6-98c0-888fcfea3ce3
+    tags: ["application", "monitor", "icon"]

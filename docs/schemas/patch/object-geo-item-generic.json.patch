@@ -1,0 +1,136 @@
+{
+  "schema_file": "./docs/schemas/original/object-geo-item-generic.json",
+  "schema": {
+        "id": "983d1fd8-f4a7-4288-b53a-183e954262c0",
+        "name": "PixelMonitor Object Geo Item, Template",
+        "type": "dataset",
+        "m_icon": null,
+        "m_tags": [
+            "application",
+            "monitor",
+            "object geo item",
+            "generic"
+        ],
+        "enabled": true,
+        "m_email": null,
+        "m_author": "Pixel",
+        "m_picture": null,
+        "m_version": "0.0.9",
+        "m_longname": null,
+        "default_ttl": null,
+        "description": null,
+        "m_external_id": null,
+        "m_manufacturer": "Pixel",
+        "application_owner": "b32dcad5-f93a-483f-b5a6-11399d5a25e1"
+    },
+    "properties": [
+        {
+            "mask": "",
+            "type": "number",
+            "index": 0,
+            "regex": "",
+            "units": "",
+            "hidden": false,
+            "property": "Alert count",
+            "value_set": "",
+            "group_name": "Common",
+            "description": "",
+            "value_range": "",
+            "default_value": 1,
+            "group_description": null
+        },
+        {
+            "mask": "",
+            "type": "string",
+            "index": 0,
+            "regex": "",
+            "units": "",
+            "hidden": false,
+            "property": "Name",
+            "value_set": null,
+            "group_name": "Info",
+            "description": null,
+            "value_range": null,
+            "default_value": "",
+            "group_description": null
+        },
+        {
+            "mask": "",
+            "type": "json array",
+            "index": 0,
+            "regex": "",
+            "units": "",
+            "hidden": false,
+            "property": "Alarms",
+            "value_set": "",
+            "group_name": "State",
+            "description": "",
+            "value_range": "",
+            "default_value": [
+                {
+                }
+            ],
+            "group_description": null
+        },
+        {
+            "mask": "",
+            "type": "string",
+            "index": 0,
+            "regex": "",
+            "units": "",
+            "hidden": false,
+            "property": "Alert",
+            "value_set": "",
+            "group_name": "State",
+            "description": "",
+            "value_range": "",
+            "default_value": "OFF",
+            "group_description": null
+        },
+        {
+            "mask": "",
+            "type": "number",
+            "index": 0,
+            "regex": "",
+            "units": "",
+            "hidden": false,
+            "property": "Distance",
+            "value_set": "",
+            "group_name": "State",
+            "description": "",
+            "value_range": "",
+            "default_value": 0,
+            "group_description": null
+        },
+        {
+            "mask": "",
+            "type": "bool",
+            "index": 0,
+            "regex": "",
+            "units": "",
+            "hidden": false,
+            "property": "Inside",
+            "value_set": "",
+            "group_name": "State",
+            "description": "",
+            "value_range": "",
+            "default_value": false,
+            "group_description": null
+        },
+        {
+            "mask": "",
+            "type": "string",
+            "index": 0,
+            "regex": "",
+            "units": "",
+            "hidden": false,
+            "property": "Source",
+            "value_set": "",
+            "group_name": "State",
+            "description": "",
+            "value_range": "",
+            "default_value": "",
+            "group_description": null
+        }
+    ]
+}

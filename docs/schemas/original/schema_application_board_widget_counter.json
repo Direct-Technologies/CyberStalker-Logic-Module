@@ -1,0 +1,318 @@
+{
+    "schema": {
+        "id": "2a675e27-6394-4669-9978-c0c9546d1057",
+        "name": "PixelBoard Counter widget",
+        "type": "dataset",
+        "m_icon": null,
+        "m_tags": [
+            "application",
+            "board",
+            "widget",
+            "counter"
+        ],
+        "enabled": true,
+        "m_email": "support@pixel-networks.com",
+        "m_author": "Pixel",
+        "m_picture": null,
+        "m_version": "0.0.18",
+        "m_longname": null,
+        "default_ttl": null,
+        "description": "Counter - a widget designed to display the number of objects that match a certain filter condition. In it, instead of a specific data source or sources, a condition is set for which all objects that the Pixel Board application has access to and that are created based on the selected data schema will be checked for compliance. Filtering is applied to objects of the same type, because they must have the same fields. The result of the widget that it displays is the number of objects that match the condition. The Counter widget has the ability to issue alarms: it can be configured from one to three conditions for switching to an alarm.",
+        "m_external_id": "2a675e27-6394-4669-9978-c0c9546d1057",
+        "m_manufacturer": "Pixel",
+        "application_owner": "b32dcad5-f93a-483f-b5a6-11399d5a25e1"
+    },
+    "properties": [
+        {
+            "mask": "",
+            "type": "string",
+            "index": 0,
+            "regex": "",
+            "units": "",
+            "hidden": false,
+            "property": "Format",
+            "value_set": {
+                "list": [
+                    {
+                        "key": "icon_value",
+                        "title": "Icon & Value"
+                    },
+                    {
+                        "key": "value",
+                        "title": "Value"
+                    }
+                ],
+                "component": "select"
+            },
+            "group_name": "Settings",
+            "description": "Format",
+            "value_range": null,
+            "default_value": "icon_value",
+            "group_description": null
+        },
+        {
+            "mask": "",
+            "type": "bool",
+            "index": 0,
+            "regex": "",
+            "units": "",
+            "hidden": false,
+            "property": "Full Line",
+            "value_set": {
+                "component": "switch"
+            },
+            "group_name": "Settings",
+            "description": "Full line",
+            "value_range": null,
+            "default_value": false,
+            "group_description": null
+        },
+        {
+            "mask": "",
+            "type": "bool",
+            "index": 0,
+            "regex": "",
+            "units": "",
+            "hidden": false,
+            "property": "Simulation",
+            "value_set": {
+                "component": "switch"
+            },
+            "group_name": "Settings",
+            "description": "Simulation",
+            "value_range": null,
+            "default_value": false,
+            "group_description": null
+        },
+        {
+            "mask": "",
+            "type": "string",
+            "index": 0,
+            "regex": "",
+            "units": "",
+            "hidden": false,
+            "property": "Style",
+            "value_set": {
+                "list": [
+                    {
+                        "key": "lightondark",
+                        "title": "Light on dark"
+                    },
+                    {
+                        "key": "lightontransparent",
+                        "title": "Light on transparent"
+                    },
+                    {
+                        "key": "darkonlight",
+                        "title": "Dark on light"
+                    },
+                    {
+                        "key": "darkontransparent",
+                        "title": "Dark on transparent"
+                    }
+                ],
+                "component": "select"
+            },
+            "group_name": "Settings",
+            "description": "Style",
+            "value_range": null,
+            "default_value": "lightondark",
+            "group_description": null
+        },
+        {
+            "mask": "",
+            "type": "string",
+            "index": 0,
+            "regex": "",
+            "units": "",
+            "hidden": false,
+            "property": "Type",
+            "value_set": {
+                "list": [
+                    {
+                        "key": "small",
+                        "title": "Small"
+                    },
+                    {
+                        "key": "medium",
+                        "title": "Medium"
+                    },
+                    {
+                        "key": "large",
+                        "title": "Large"
+                    }
+                ],
+                "component": "select"
+            },
+            "group_name": "Settings",
+            "description": "Type",
+            "value_range": null,
+            "default_value": "small",
+            "group_description": null
+        },
+        {
+            "mask": "",
+            "type": "string",
+            "index": 0,
+            "regex": "",
+            "units": "",
+            "hidden": false,
+            "property": "FROM",
+            "value_set": {
+                "list": [
+                    {
+                        "key": "all_objects",
+                        "title": "All objects"
+                    },
+                    {
+                        "key": "linked_objects_only",
+                        "title": "Linked objects only"
+                    }
+                ],
+                "component": "select"
+            },
+            "group_name": "Source",
+            "description": "From",
+            "value_range": null,
+            "default_value": "all_objects",
+            "group_description": null
+        },
+        {
+            "mask": "",
+            "type": "string",
+            "index": 0,
+            "regex": "",
+            "units": "",
+            "hidden": false,
+            "property": "PROPERTY",
+            "value_set": {
+                "component": "text"
+            },
+            "group_name": "Source",
+            "description": "Property",
+            "value_range": null,
+            "default_value": "Group/Property",
+            "group_description": null
+        },
+        {
+            "mask": "",
+            "type": "string",
+            "index": 0,
+            "regex": "",
+            "units": "",
+            "hidden": false,
+            "property": "RESULT_TYPE",
+            "value_set": {
+                "list": [
+                    {
+                        "key": "count",
+                        "title": "Count"
+                    },
+                    {
+                        "key": "sum",
+                        "title": "Sum"
+                    },
+                    {
+                        "key": "min",
+                        "title": "Min"
+                    },
+                    {
+                        "key": "max",
+                        "title": "Max"
+                    },
+                    {
+                        "key": "average",
+                        "title": "Average"
+                    }
+                ],
+                "component": "select"
+            },
+            "group_name": "Source",
+            "description": "Result type",
+            "value_range": null,
+            "default_value": "count",
+            "group_description": null
+        },
+        {
+            "mask": "",
+            "type": "string",
+            "index": 0,
+            "regex": "",
+            "units": "",
+            "hidden": false,
+            "property": "SCHEMA_ID",
+            "value_set": {
+                "component": "text"
+            },
+            "group_name": "Source",
+            "description": "Schema id",
+            "value_range": null,
+            "default_value": "",
+            "group_description": null
+        },
+        {
+            "mask": "",
+            "type": "number",
+            "index": 0,
+            "regex": "",
+            "units": "",
+            "hidden": false,
+            "property": "Position",
+            "value_set": "",
+            "group_name": "Status",
+            "description": "Position",
+            "value_range": "",
+            "default_value": 0,
+            "group_description": null
+        },
+        {
+            "mask": "",
+            "type": "string",
+            "index": 0,
+            "regex": "",
+            "units": "",
+            "hidden": false,
+            "property": "ICON_NAME",
+            "value_set": {
+                "component": "text"
+            },
+            "group_name": "Value",
+            "description": "Icon name",
+            "value_range": null,
+            "default_value": "",
+            "group_description": null
+        },
+        {
+            "mask": "",
+            "type": "string",
+            "index": 0,
+            "regex": "",
+            "units": "",
+            "hidden": false,
+            "property": "Title",
+            "value_set": {
+                "component": "text"
+            },
+            "group_name": "Value",
+            "description": "",
+            "value_range": null,
+            "default_value": "Title",
+            "group_description": null
+        },
+        {
+            "mask": "",
+            "type": "number",
+            "index": 0,
+            "regex": "",
+            "units": "",
+            "hidden": false,
+            "property": "Value",
+            "value_set": null,
+            "group_name": "Value",
+            "description": "Value",
+            "value_range": null,
+            "default_value": 0,
+            "group_description": null
+        }
+    ]
+}

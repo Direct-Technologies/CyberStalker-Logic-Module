@@ -1,0 +1,86 @@
+{
+    "schema": {
+      "id": "0c7c77c1-0959-4899-b462-2c99ce8b934f",
+      "name": "PixelBoard Dashboard",
+      "type": "dataset",
+      "m_icon": null,
+      "m_tags": [
+        "application",
+        "board",
+        "dashboard"
+      ],
+      "enabled": true,
+      "m_email": "support@pixel-networks.com",
+      "m_author": "Pixel",
+      "m_picture": null,
+      "m_version": "1.0.8",
+      "m_longname": null,
+      "default_ttl": null,
+      "description": "PixelBoard Dashboard",
+      "m_external_id": "0c7c77c1-0959-4899-b462-2c99ce8b934f",
+      "m_manufacturer": "Pixel",
+      "editorgroup": "5d963ea1-cdf2-4e66-8f98-bc07d5f3ea07"
+    },
+    "properties": [
+      {
+        "mask": "",
+        "type": "bool",
+        "index": 0,
+        "regex": "",
+        "units": "",
+        "hidden": false,
+        "property": "Compact mode",
+        "value_set": "",
+        "group_name": "General",
+        "description": "",
+        "value_range": "",
+        "default_value": false,
+        "group_description": null
+      },
+      {
+        "mask": "",
+        "type": "json array",
+        "index": 0,
+        "regex": "",
+        "units": "",
+        "hidden": false,
+        "property": "Order",
+        "value_set": "",
+        "group_name": "General",
+        "description": "",
+        "value_range": "",
+        "default_value": [{}],
+        "group_description": null
+      },
+      {
+        "mask": "",
+        "type": "string",
+        "index": 0,
+        "regex": "",
+        "units": "",
+        "hidden": false,
+        "property": "Title",
+        "value_set": "",
+        "group_name": "General",
+        "description": "",
+        "value_range": "",
+        "default_value": "",
+        "group_description": null
+      },
+      {
+        "mask": "",
+        "type": "string",
+        "index": 0,
+        "regex": "",
+        "units": "",
+        "hidden": false,
+        "property": "Title style",
+        "value_set": "",
+        "group_name": "General",
+        "description": "",
+        "value_range": "",
+        "default_value": "",
+        "group_description": null
+      }
+    ]
+  }
