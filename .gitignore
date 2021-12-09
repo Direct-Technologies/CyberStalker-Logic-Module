@@ -1,0 +1,14 @@
+# logs
+*.log 
+
+# cache
+**/__pycache__
+
+# init
+#setup.py 
+
+# test deployment settings
+local/
+
+# Mac
+.DS_Store
