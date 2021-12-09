@@ -1,0 +1,6 @@
+variables:
+  CI_IMAGE: "pix-dispatcher"
+
+include:
+  - project: 'pixelcore/platform'
+    file: '/scripts/gl-cicd/.gitlab-ci-template.yml'  
